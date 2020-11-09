@@ -130,7 +130,6 @@
     <Compile Include="WaveClient\ModuleManagment\WaveClient.ModuleDataRuntime.cs" />
     <Compile Include="WaveClient\ModuleManagment\WaveClient.ModuleExtensions.cs" />
     <Compile Include="WaveClient\ModuleManagment\WaveClient.ModuleManagment.cs" />
-    <Compile Include="WaveClient\SDK\Localplayer.cs" />
     <Compile Include="WaveClient\SDK\memory2.cs" />
     <Page Include="WaveClient\GUI\WaveClient.GUI.MainWindow.ModulePage.xaml">
       <SubType>Designer</SubType>

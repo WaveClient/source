@@ -6,10 +6,10 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace memory2
+namespace WaveClient.SDK
 {
 
-    public class main
+    public class memory2
     {
         [DllImport("user32.dll")]
         public static extern bool GetAsyncKeyState(char vKey);

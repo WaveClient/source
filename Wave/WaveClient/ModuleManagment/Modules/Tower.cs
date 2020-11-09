@@ -15,7 +15,7 @@ namespace WaveClient.Module
 
         public static void Tick100()
         {
-            
+            Console.WriteLine("Coming soon!");
         }
 
     }

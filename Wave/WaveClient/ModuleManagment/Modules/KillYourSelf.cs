@@ -15,7 +15,7 @@ namespace WaveClient.Module
 
         public static void Tick10()
         {
-           Memory0.mem.WriteMemory(kys, 999);
+          // Memory0.mem.WriteMemory(kys, 999);
         }
     }
     
