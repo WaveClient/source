@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WaveClient.GUI"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="740.32" d:DesignWidth="800"
       Title="WaveClient">
 
     <Grid>
@@ -106,8 +106,8 @@
                             <ColumnDefinition/>
                             <ColumnDefinition Width="300"/>
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Column="1" x:Name="SModule_AutoClicker" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_AutoClicker_Click"/>
-                        <TextBlock x:Name="STextBlock_AutoClicker" HorizontalAlignment="Left" TextWrapping="Wrap" Text="AutoClicker" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                        <Button Grid.Column="1" x:Name="SModule_Autoclicker" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Autoclicker_Click"/>
+                        <TextBlock x:Name="STextBlock_Autoclicker" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Autoclicker" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
                     </Grid>
                 </StackPanel>
             </ScrollViewer>

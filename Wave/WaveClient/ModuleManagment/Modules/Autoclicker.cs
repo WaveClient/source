@@ -7,7 +7,7 @@ using System.Text;
 using WaveClient.SDK;
 using System.Threading.Tasks;
 
-namespace WaveClient.WaveClient.ModuleManagment.Modules
+namespace WaveClient.Module
 {
     public static class Autoclicker
     {

@@ -104,6 +104,14 @@ namespace WaveClient.ModuleManagment
                         //Module.Phase.
                         Module.Noclip.Disable();
                     }
+                    if(Module.Autoclicker.ToggleState == true)
+                    {
+                        Module.Autoclicker.Tick10();
+                    }
+                    if(Module.Autoclicker.ToggleState == false)
+                    {
+
+                    }
                 }
             }
 
@@ -111,7 +119,7 @@ namespace WaveClient.ModuleManagment
             {
                 while (!ExitTickThread)
                 {
-                    Thread.Sleep(100);
+                    Thread.Sleep(10);
                 }
             }
 
@@ -119,7 +127,7 @@ namespace WaveClient.ModuleManagment
             {
                 while (!ExitTickThread)
                 {
-                    Thread.Sleep(1000);
+                    Thread.Sleep(10);
                 }
             }
 
