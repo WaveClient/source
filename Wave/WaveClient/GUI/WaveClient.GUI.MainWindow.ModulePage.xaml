@@ -101,6 +101,14 @@
                         <Button Grid.Column="1" x:Name="SModule_Noclip" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Noclip_Click"/>
                         <TextBlock x:Name="STextBlock_Noclip" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Noclip" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
                     </Grid>
+                    <Grid x:Name="SGrid_AutoClicker" Height="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="300"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1" x:Name="SModule_AutoClicker" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_AutoClicker_Click"/>
+                        <TextBlock x:Name="STextBlock_AutoClicker" HorizontalAlignment="Left" TextWrapping="Wrap" Text="AutoClicker" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                    </Grid>
                 </StackPanel>
             </ScrollViewer>
         </Grid>
