@@ -115,6 +115,7 @@
     <Compile Include="WaveClient\Console\WaveClient.Main.cs" />
     <Compile Include="WaveClient\Data\WaveClient.CommunicationData.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\Autosprint.cs" />
+    <Compile Include="WaveClient\ModuleManagment\Modules\Autoclicker.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\Coords.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\Fly.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\Instabreak.cs" />
