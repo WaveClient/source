@@ -59,7 +59,7 @@ namespace WaveClient.ModuleManagment
                     if (Module.Phase.ToggleState == true)
                     {
                         //Module.Phase.
-                        Module.Phase.Enable();
+                        Module.Phase.Tick10();
                     }
                     if (Module.Noclip.ToggleState == true)
                     {
