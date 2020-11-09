@@ -52,6 +52,10 @@ namespace WaveClient.ModuleManagment
                     {
                         Module.AutoSprint.Tick10();
                     }
+                    if (Module.KillYourSelf.ToggleState == true)
+                    {
+                        Module.KillYourSelf.Enable();
+                    }
                     if (Module.Phase.ToggleState == true)
                     {
                         //Module.Phase.
@@ -61,7 +65,7 @@ namespace WaveClient.ModuleManagment
                     {
                         Module.Noclip.Tick10();
                     }
-                    if (Module.Noclip.ToggleState == true)
+                    if (Module.AnvilCost.ToggleState == true)
                     {
                         Module.AnvilCost.Tick100();
                     }
@@ -104,16 +108,19 @@ namespace WaveClient.ModuleManagment
                     }
                     if (Module.Noclip.ToggleState == false)
                     {
-                        //Module.Phase.
                         Module.Noclip.Disable();
                     }
-                    if(Module.Autoclicker.ToggleState == true)
+                    if(Module.Autoclicker.ToggleState == false)
                     {
                         Module.Autoclicker.Tick10();
                     }
                     if(Module.Autoclicker.ToggleState == false)
                     {
 
+                    }
+                    if (Module.KillYourSelf.ToggleState == false)
+                    {
+                        
                     }
                     if (Module.Noclip.ToggleState == false)
                     {
