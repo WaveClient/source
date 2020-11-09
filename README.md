@@ -24,9 +24,18 @@ Wave Client is a Minecraft Windows 10 Edition (Bedrock) Utility Mod!
 ## Contributing
 Contributions are always welcome, but since we are closed souce, you must apply for developer!
 
+## To do
+Add icon for the console & app.
+Better GUI, maybe tabbed. 
+Code optimization
+More pointers | Localplayer
+Have an internal version with commands that would work along side this (it would auto inject the DLL upon launch, this IS coming soon!
+
 ## Code used from external sources (not our work)
 
 <!--- - [L](https://google.com) - --> We have restarted our development, once again, this should be entirely made by us (except libraries etc..) . Will be updated if needed!
+
+
 
 ## Support
 Join our [Discord Server](https://discord.gg/3mdwjR)
