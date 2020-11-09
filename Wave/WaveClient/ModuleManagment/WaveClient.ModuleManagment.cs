@@ -104,7 +104,7 @@ namespace WaveClient.ModuleManagment
                     }
                     if (Module.Phase.ToggleState == false)
                     {
-                        
+                        Module.Phase.Disable();
                     }
                     if (Module.Noclip.ToggleState == false)
                     {
