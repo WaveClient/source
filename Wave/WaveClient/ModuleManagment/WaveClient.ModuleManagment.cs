@@ -15,7 +15,7 @@ namespace WaveClient.ModuleManagment
     public static class ModuleManager
     {
         public static class MemoryUpdate
-        { // Memory0.mem.PatchMemory("Minecraft.Windows.exe", 0x, new byte[] { 0x });
+        {
             public static void Tick10()
             {
                 while (!ExitTickThread)
