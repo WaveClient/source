@@ -56,6 +56,7 @@ namespace WaveClient.GUI
             SModule_Phase.Content = GUIExtensions.GetBoolStateText(Module.Phase.ToggleState);
             SModule_Noclip.Content = GUIExtensions.GetBoolStateText(Module.Noclip.ToggleState);
             SModule_Autoclicker.Content = GUIExtensions.GetBoolStateText(Module.Autoclicker.ToggleState);
+            SModule_AnvilCost.Content = GUIExtensions.GetBoolStateText(Module.AnvilCost.ToggleState);
         }
 
         private void SModule_Airjump_Click(object sender, RoutedEventArgs e)
@@ -118,6 +119,11 @@ namespace WaveClient.GUI
         {
             Module.Autoclicker.ToggleState = !Module.Autoclicker.ToggleState;
             SModule_Autoclicker.Content = GUIExtensions.GetBoolStateText(Module.Autoclicker.ToggleState);
+        }
+        private void SModule_AnvilCost_Click(object sender, RoutedEventArgs e)
+        {
+            Module.AnvilCost.ToggleState = !Module.AnvilCost.ToggleState;
+            SModule_AnvilCost.Content = GUIExtensions.GetBoolStateText(Module.AnvilCost.ToggleState);
         }
     }
 }
