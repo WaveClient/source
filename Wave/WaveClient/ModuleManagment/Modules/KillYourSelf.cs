@@ -11,11 +11,12 @@ namespace WaveClient.Module
         public static bool ToggleState;
 
         static Pointer kys = new Pointer("Minecraft.Windows.exe", 0x036A0278, new int[] { 0x8, 0x18, 0x80, 0x5B0, 0xB0, 0xF8, 0x19C });
-
-
-        public static void Tick10()
+        static Pointer ypos = new Pointer("Minecraft.Windows.exe", 0x036A0238, new int[] { 0x10, 0x18, 0x80, 0x9F8, 0x18, 0x45C});
+        static float cypos = Memory0.mem.ReadFloat(yPos);
+        static float dropvalue = cypos + 30;
+        public static void Enable()
         {
-          // Memory0.mem.WriteMemory(kys, 999);
+          Memory0.mem.WriteMemory(kys, dropvalue);
         }
     }
     
