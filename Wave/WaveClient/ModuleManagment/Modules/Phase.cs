@@ -21,7 +21,7 @@ namespace WaveClient.Module
 
        // static float currentYPos = Memory0.mem.ReadFloat(yPos);
 
-        public static void Enable()
+        public static void Tick10()
         {
             Y2 = ha
             Memory0.mem.WriteMemory(ypos, Y2)
