@@ -59,8 +59,11 @@ namespace WaveClient.ModuleManagment
                     }
                     if (Module.Noclip.ToggleState == true)
                     {
-                        //Module.Phase.
                         Module.Noclip.Tick10();
+                    }
+                    if (Module.Noclip.ToggleState == true)
+                    {
+                        Module.AnvilCost.Tick100();
                     }
                     ///////////////////
                     if (Module.AirJump.ToggleState == false)
@@ -111,6 +114,10 @@ namespace WaveClient.ModuleManagment
                     if(Module.Autoclicker.ToggleState == false)
                     {
 
+                    }
+                    if (Module.Noclip.ToggleState == false)
+                    {
+                        
                     }
                 }
             }
