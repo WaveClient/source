@@ -109,6 +109,14 @@
                         <Button Grid.Column="1" x:Name="SModule_Autoclicker" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Autoclicker_Click"/>
                         <TextBlock x:Name="STextBlock_Autoclicker" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Autoclicker" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
                     </Grid>
+                      <Grid x:Name="SGrid_AnvilCost" Height="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="300"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1" x:Name="SModule_AnvilCost" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_AnvilCost_Click"/>
+                        <TextBlock x:Name="STextBlock_AnvilCost" HorizontalAlignment="Left" TextWrapping="Wrap" Text="AnvilCost" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                    </Grid>
                 </StackPanel>
             </ScrollViewer>
         </Grid>
