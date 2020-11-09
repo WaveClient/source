@@ -23,12 +23,15 @@ namespace WaveClient.Module
 
         public static void Enable()
         {
-            Y2 
+            Y2 = ha
+            Memory0.mem.WriteMemory(ypos, Y2)
+            Memory0.mem.WriteMemory(ypos, ha)
         }
 
         public static void Disable()
         {
             Y2 = ha + 1.8f;
+            Memory0.mem.WriteMemory(ypos, Y2)
         }
 
     }
