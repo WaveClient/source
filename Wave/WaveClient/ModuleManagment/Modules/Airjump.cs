@@ -3,6 +3,7 @@ using WaveClient.ModuleManagment;
 using Wave.Cmr.MemoryManagement;
 using System.Runtime.InteropServices;
 using System.Windows.Input;
+using WaveClient.SDK;
 
 namespace WaveClient.Module
 {

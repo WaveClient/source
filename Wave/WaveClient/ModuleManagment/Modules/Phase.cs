@@ -7,6 +7,7 @@ using System.Net.NetworkInformation;
 using Wave.Cmr;
 using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
+using WaveClient.SDK;
 
 namespace WaveClient.Module
 {

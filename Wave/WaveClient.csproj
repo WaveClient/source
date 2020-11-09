@@ -130,12 +130,8 @@
     <Compile Include="WaveClient\ModuleManagment\WaveClient.ModuleDataRuntime.cs" />
     <Compile Include="WaveClient\ModuleManagment\WaveClient.ModuleExtensions.cs" />
     <Compile Include="WaveClient\ModuleManagment\WaveClient.ModuleManagment.cs" />
-    <Compile Include="WaveClient\SDK\ClientInstance.cs" />
     <Compile Include="WaveClient\SDK\Localplayer.cs" />
-    <Compile Include="WaveClient\SDK\Memory.cs" />
-    <Compile Include="WaveClient\SDK\PlayerEntity.cs" />
-    <Compile Include="WaveClient\SDK\Pointers.cs" />
-    <Compile Include="WaveClient\SDK\SDKHandler.cs" />
+    <Compile Include="WaveClient\SDK\memory2.cs" />
     <Page Include="WaveClient\GUI\WaveClient.GUI.MainWindow.ModulePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

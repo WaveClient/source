@@ -1,6 +1,7 @@
 ﻿//using System;
 using WaveClient.ModuleManagment;
 using Wave.Cmr.MemoryManagement;
+using WaveClient.SDK;
 
 namespace WaveClient.Module
 {
