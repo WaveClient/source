@@ -22,7 +22,7 @@ namespace WaveClient
             cmr.clogl($"{cmr.cf(100, 108, 143)}WaveClient", "Loading Modules");
             Thread.Sleep(100);
             ModuleManagment.ModuleManager.MemoryUpdate.StartTickThread();
-            cmr.clogl($"{cmr.cf(100, 108, 143)}WaveClient", "Being cool");
+            cmr.clogl($"{cmr.cf(100, 108, 143)}Made by Milo and the Wave Development Team!");
         }
 
         public static class Application
