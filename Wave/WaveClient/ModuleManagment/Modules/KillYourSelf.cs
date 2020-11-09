@@ -12,7 +12,7 @@ namespace WaveClient.Module
 
         static Pointer ypos = new Pointer("Minecraft.Windows.exe", 0x036A0238, new int[] { 0x10, 0x18, 0x80, 0x9F8, 0x18, 0x45C});
         static float cypos = Memory0.mem.ReadFloat(ypos);
-        static float dropvalue = cypos + 30;
+        static float dropvalue = cypos + 30f;
         public static void Enable()
         {
           Memory0.mem.WriteMemory(ypos, dropvalue);
