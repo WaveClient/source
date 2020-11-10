@@ -16,6 +16,12 @@ namespace WaveClient.ModuleManagment
     {
         public static class MemoryUpdate
         {
+            //
+            if (Module.KillYourSelf.ToggleState == true)
+            {
+                Module.KillYourSelf.Enable();
+            }
+            //
             public static void Tick10()
             {
                 while (!ExitTickThread)
@@ -52,10 +58,7 @@ namespace WaveClient.ModuleManagment
                     {
                         Module.AutoSprint.Tick10();
                     }
-                    if (Module.KillYourSelf.ToggleState == true)
-                    {
-                        Module.KillYourSelf.Enable();
-                    }
+                    //
                     if (Module.Phase.ToggleState == true)
                     {
                         //Module.Phase.
