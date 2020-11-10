@@ -1,5 +1,2 @@
-Wave/obj/
-Wave/bin/
-Wave/obj/Release/
-Wave/obj/Debug
-Wave/obj/x64/
+Wave/obj
+Wave/bin
