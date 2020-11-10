@@ -2,7 +2,7 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C1E0087F-19B2-40DF-BB70-4DEE9BA07EB8}</ProjectGuid>
     <OutputType>Exe</OutputType>
@@ -119,6 +119,7 @@
     <Compile Include="WaveClient\ModuleManagment\Modules\Autoclicker.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\Coords.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\Fly.cs" />
+    <Compile Include="WaveClient\ModuleManagment\Modules\Fullbright.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\Instabreak.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\Noclip.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\NoFall.cs" />
@@ -129,11 +130,11 @@
     <Compile Include="WaveClient\ModuleManagment\Modules\Reach.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\Speed.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\Tower.cs" />
-    <Compile Include="WaveClient\ModuleManagment\WaveClient.ModuleDataRuntime.cs" />
-    <Compile Include="WaveClient\ModuleManagment\WaveClient.ModuleExtensions.cs" />
-    <Compile Include="WaveClient\ModuleManagment\WaveClient.ModuleManagment.cs" />
+    <Compile Include="WaveClient\ModuleManagment\ModuleDataRuntime.cs" />
+    <Compile Include="WaveClient\ModuleManagment\ModuleExtensions.cs" />
+    <Compile Include="WaveClient\ModuleManagment\ModuleManagment.cs" />
     <Compile Include="WaveClient\SDK\memory2.cs" />
-    <Page Include="WaveClient\GUI\WaveClient.GUI.MainWindow.ModulePage.xaml">
+    <Page Include="WaveClient\GUI\ModulePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -153,8 +154,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="WaveClient\GUI\WaveClient.GUI.MainWindow.ModulePage.xaml.cs">
-      <DependentUpon>WaveClient.GUI.MainWindow.ModulePage.xaml</DependentUpon>
+    <Compile Include="WaveClient\GUI\ModulePage.xaml.cs">
+      <DependentUpon>ModulePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="WaveClient\GUI\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
