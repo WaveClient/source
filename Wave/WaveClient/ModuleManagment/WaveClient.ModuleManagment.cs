@@ -61,7 +61,6 @@ namespace WaveClient.ModuleManagment
                     //
                     if (Module.Phase.ToggleState == true)
                     {
-                        //Module.Phase.
                         Module.Phase.Tick10();
                     }
                     if (Module.Noclip.ToggleState == true)
@@ -71,6 +70,10 @@ namespace WaveClient.ModuleManagment
                     if (Module.AnvilCost.ToggleState == true)
                     {
                         Module.AnvilCost.Tick100();
+                    }
+                    if (Module.Fullbright.ToggleState == true)
+                    {
+                        Module.Fullbright.Tick1000();
                     }
                     ///////////////////
                     if (Module.AirJump.ToggleState == false)
@@ -125,7 +128,11 @@ namespace WaveClient.ModuleManagment
                     {
                         
                     }
-                    if (Module.Noclip.ToggleState == false)
+                    if (Module.AnvilCost.ToggleState == false)
+                    {
+                        
+                    }
+                    if (Module.Fullbright.ToggleState == false)
                     {
                         
                     }
