@@ -13,6 +13,8 @@ namespace WaveClient
     {
         public static void Start(string[] args)
         {
+            Process.Start("minecraft://");
+            Console.Title = @"Wave Client Console";
             cmr.MaximizeConsole();
             cmr_font.SetConsoleFont("Cascadia Code", 12, 24);
             Console.WriteLine($"{cmr.cf(89, 122, 255)}Welcome to WaveClient!");
@@ -20,7 +22,7 @@ namespace WaveClient
             Thread.Sleep(1000);
             cmr.MinimizeConsole();
             cmr.clogl($"{cmr.cf(100, 108, 143)}WaveClient", "Loading Modules");
-            Console.WriteLine($"{cmr.cf(100, 108, 143)}Made by Milo and the Wave Development Team!");
+            Console.WriteLine($"{cmr.cf(100, 108, 143)}Made by the Wave Development Team!");
             Thread.Sleep(100);
             ModuleManagment.ModuleManager.MemoryUpdate.StartTickThread();
         }
