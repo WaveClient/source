@@ -20,9 +20,9 @@ namespace WaveClient
             Thread.Sleep(1000);
             cmr.MinimizeConsole();
             cmr.clogl($"{cmr.cf(100, 108, 143)}WaveClient", "Loading Modules");
+            Console.WriteLine($"{cmr.cf(100, 108, 143)}Made by Milo and the Wave Development Team!");
             Thread.Sleep(100);
             ModuleManagment.ModuleManager.MemoryUpdate.StartTickThread();
-            cmr.clogl($"{cmr.cf(100, 108, 143)}Made by Milo and the Wave Development Team!");
         }
 
         public static class Application
