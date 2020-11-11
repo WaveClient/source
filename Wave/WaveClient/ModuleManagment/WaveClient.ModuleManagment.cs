@@ -17,13 +17,12 @@ namespace WaveClient.ModuleManagment
         public static class MemoryUpdate
         {
             //
-            if (Module.KillYourSelf.ToggleState == true)
-            {
-                Module.KillYourSelf.Enable();
-            }
-            //
             public static void Tick10()
             {
+                if (Module.KillYourSelf.ToggleState == true)
+                {
+                    Module.KillYourSelf.Enable();
+                }
                 while (!ExitTickThread)
                 {
                     if(Module.AirJump.ToggleState == true)
@@ -71,10 +70,11 @@ namespace WaveClient.ModuleManagment
                     {
                         Module.AnvilCost.Tick100();
                     }
+                    /*
                     if (Module.Fullbright.ToggleState == true)
                     {
                         Module.Fullbright.Tick1000();
-                    }
+                    } */
                     ///////////////////
                     if (Module.AirJump.ToggleState == false)
                     {
@@ -132,10 +132,11 @@ namespace WaveClient.ModuleManagment
                     {
                         
                     }
+                    /*
                     if (Module.Fullbright.ToggleState == false)
                     {
                         
-                    }
+                    } */
                 }
             }
 

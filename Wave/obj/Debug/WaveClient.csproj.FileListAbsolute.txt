@@ -1,8 +1,0 @@
-C:\Users\bjorn\OneDrive\Documenten\GitHub\Wave external\source\Wave\obj\Debug\WaveClient.csprojAssemblyReference.cache
-C:\Users\bjorn\OneDrive\Documenten\GitHub\Wave external\source\Wave\obj\Debug\WaveClient\GUI\Controls\Styles\WaveClient.GUI.Controls.Styles.SC_Button.baml
-C:\Users\bjorn\OneDrive\Documenten\GitHub\Wave external\source\Wave\obj\Debug\WaveClient\GUI\Controls\Styles\WaveClient.GUI.Controls.Styles.SC_ScrollViewer.baml
-C:\Users\bjorn\OneDrive\Documenten\GitHub\Wave external\source\Wave\obj\Debug\WaveClient\GUI\WaveClient.GUI.MainWindow.ModulePage.g.cs
-C:\Users\bjorn\OneDrive\Documenten\GitHub\Wave external\source\Wave\obj\Debug\WaveClient\GUI\MainWindow.g.cs
-C:\Users\bjorn\OneDrive\Documenten\GitHub\Wave external\source\Wave\obj\Debug\App.g.cs
-C:\Users\bjorn\OneDrive\Documenten\GitHub\Wave external\source\Wave\obj\Debug\WaveClient_MarkupCompile.cache
-C:\Users\bjorn\OneDrive\Documenten\GitHub\Wave external\source\Wave\obj\Debug\WaveClient_MarkupCompile.lref

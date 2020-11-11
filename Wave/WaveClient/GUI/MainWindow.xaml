@@ -22,7 +22,7 @@
             </StackPanel>
         </Grid>
         <Grid x:Name="Content" Margin="0,32,0,0" Opacity="0">
-            <Frame Name="NavigationFrame" NavigationUIVisibility="Hidden" Navigating="NavigationFrame_Navigated"  Content="" Source="/WaveClient;component/WaveClient/GUI/ModulePage.xaml"/>
+            <Frame Name="NavigationFrame" NavigationUIVisibility="Hidden" Navigating="NavigationFrame_Navigated"  Content="" Source="/WaveClient;component/WaveClient/GUI/WaveClient.GUI.MainWindow.ModulePage.xaml"/>
         </Grid>
         <Border BorderBrush="#FF1700FF" BorderThickness="3"/>
     </Grid>

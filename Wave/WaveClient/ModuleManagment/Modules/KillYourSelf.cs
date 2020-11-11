@@ -17,7 +17,7 @@ namespace WaveClient.Module
         {
             float cypos = Memory0.mem.ReadFloat(ypos);
             float dropvalue = cypos + 30f;
-            Console.WriteLine("The ypos is " + cypos;
+            Console.WriteLine("The ypos is " + cypos);
             Memory0.mem.WriteMemory(ypos, dropvalue);
             
         }

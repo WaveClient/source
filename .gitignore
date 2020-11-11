@@ -1,2 +1,5 @@
 Wave/obj
 Wave/bin
+Wave/obj/Debug/App.g.i.cs
+Wave/obj/Debug/.NETFramework,Version=v4.6.1.AssemblyAttributes.cs
+Wave/bin/x64/Release/WaveClient.pdb

@@ -13,7 +13,7 @@ namespace WaveClient
     {
         public static void Start(string[] args)
         {
-            Process.Start("minecraft://");
+            //Process.Start("minecraft://");
             Console.Title = @"Wave Client Console";
             cmr.MaximizeConsole();
             cmr_font.SetConsoleFont("Cascadia Code", 12, 24);
