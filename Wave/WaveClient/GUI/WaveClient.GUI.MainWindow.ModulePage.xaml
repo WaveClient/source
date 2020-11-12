@@ -5,17 +5,17 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WaveClient.GUI"
       mc:Ignorable="d" 
-      d:DesignHeight="740.32" d:DesignWidth="800"
-      Title="WaveClient">
+      d:DesignHeight="740.32"
+      Title="WaveClient" Width="530">
 
     <Grid>
-        <Grid Margin="10">
+        <Grid>
             <ScrollViewer HorizontalAlignment="Left">
-                <StackPanel VerticalAlignment="Top" Width="780">
+                <StackPanel VerticalAlignment="Top" Width="500">
                     <Grid x:Name="SGrid_Airjump" Height="60">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="1" x:Name="SModule_Airjump" Style="{StaticResource SC_Button}" Content="On" Margin="5" Foreground="Black" Click="SModule_Airjump_Click"/>
                         <TextBlock x:Name="STextBlock_Airjump" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Airjump" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
@@ -23,16 +23,15 @@
                     <Grid x:Name="SGrid_NoFall" Height="60">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="1" x:Name="SModule_NoFall" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_NoFall_Click"/>
                         <TextBlock x:Name="STextBlock_NoFall" HorizontalAlignment="Left" TextWrapping="Wrap" Text="NoFall" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
                     </Grid>
-                    <!--Paste Modules here -->
                     <Grid x:Name="SGrid_Instabreak" Height="60">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="1" x:Name="SModule_Instabreak" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Instabreak_Click"/>
                         <TextBlock x:Name="STextBlock_Instabreak" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Instabreak" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
@@ -40,7 +39,7 @@
                     <Grid x:Name="SGrid_Reach" Height="60">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="1" x:Name="SModule_Reach" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Reach_Click"/>
                         <TextBlock x:Name="STextBlock_Reach" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Reach" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
@@ -48,7 +47,7 @@
                     <Grid x:Name="SGrid_NoSwing" Height="60">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="1" x:Name="SModule_NoSwing" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_NoSwing_Click"/>
                         <TextBlock x:Name="STextBlock_NoSwing" HorizontalAlignment="Left" TextWrapping="Wrap" Text="NoSwing" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
@@ -56,7 +55,7 @@
                     <Grid x:Name="SGrid_Coords" Height="60">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="1" x:Name="SModule_Coords" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Coords_Click"/>
                         <TextBlock x:Name="STextBlock_Coords" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Coords" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
@@ -64,7 +63,7 @@
                     <Grid x:Name="SGrid_Speed" Height="60">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="1" x:Name="SModule_Speed" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Speed_Click"/>
                         <TextBlock x:Name="STextBlock_Speed" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Speed" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
@@ -72,7 +71,7 @@
                     <Grid x:Name="SGrid_AutoSprint" Height="60">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="1" x:Name="SModule_AutoSprint" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_AutoSprint_Click"/>
                         <TextBlock x:Name="STextBlock_AutoSprint" HorizontalAlignment="Left" TextWrapping="Wrap" Text="AutoSprint" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
@@ -80,7 +79,7 @@
                     <Grid x:Name="SGrid_KillYourSelf" Height="60">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="1" x:Name="SModule_KillYourSelf" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_KillYourSelf_Click"/>
                         <TextBlock x:Name="STextBlock_KillYourSelf" HorizontalAlignment="Left" TextWrapping="Wrap" Text="KillYourSelf" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
@@ -88,7 +87,7 @@
                     <Grid x:Name="SGrid_Phase" Height="60">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="1" x:Name="SModule_Phase" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Phase_Click"/>
                         <TextBlock x:Name="STextBlock_Phase" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Phase" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
@@ -96,7 +95,7 @@
                     <Grid x:Name="SGrid_Noclip" Height="60">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="1" x:Name="SModule_Noclip" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Noclip_Click"/>
                         <TextBlock x:Name="STextBlock_Noclip" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Noclip" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
@@ -104,19 +103,20 @@
                     <Grid x:Name="SGrid_AutoClicker" Height="60">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="1" x:Name="SModule_Autoclicker" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Autoclicker_Click"/>
                         <TextBlock x:Name="STextBlock_Autoclicker" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Autoclicker" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
                     </Grid>
-                      <Grid x:Name="SGrid_AnvilCost" Height="60">
+                    <Grid x:Name="SGrid_AnvilCost" Height="60">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="1" x:Name="SModule_AnvilCost" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_AnvilCost_Click"/>
                         <TextBlock x:Name="STextBlock_AnvilCost" HorizontalAlignment="Left" TextWrapping="Wrap" Text="AnvilCost" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
                     </Grid>
+
                 </StackPanel>
             </ScrollViewer>
         </Grid>

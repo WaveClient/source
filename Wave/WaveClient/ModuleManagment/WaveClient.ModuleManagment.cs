@@ -20,10 +20,6 @@ namespace WaveClient.ModuleManagment
             //
             public static void Tick10()
             {
-            if (Module.KillYourSelf.ToggleState == true)
-            {
-                Module.KillYourSelf.Enable();
-            }
             while (!ExitTickThread)
                 {
                     if(Module.AirJump.ToggleState == true)
@@ -52,13 +48,17 @@ namespace WaveClient.ModuleManagment
                     }
                     if (Module.Speed.ToggleState == true)
                     {
-                        Module.Speed.Tick100();
+                        Module.Speed.Tick10();
                     }
                     if (Module.AutoSprint.ToggleState == true)
                     {
                         Module.AutoSprint.Tick10();
                     }
                     //
+                    if (Module.KillYourSelf.ToggleState == true)
+                    {
+                        Module.KillYourSelf.Enable();
+                    }
                     if (Module.Phase.ToggleState == true)
                     {
                         //Module.Phase.

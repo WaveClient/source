@@ -16,7 +16,7 @@ namespace WaveClient.Module
         public static void Tick100()
         {
         //value is set to 1
-            Memory0.mem.WriteMemory(anvilcostptr, 1);
+            Memory0.mem.WriteMemory(anvilcostptr, 0);
             
         }
 
