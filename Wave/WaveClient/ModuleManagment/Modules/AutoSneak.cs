@@ -16,7 +16,7 @@ namespace WaveClient.Module
         public static void Enable()
         {
 
-            Memory0.mem.WriteMemory(autosneakptr, sneakvalue);
+            Memory0.mem.WriteMemoryNoValue(autosneakptr);
         }
         
     }
