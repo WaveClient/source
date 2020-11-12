@@ -12,7 +12,7 @@ namespace WaveClient.Module
         public static bool ToggleState;
 
         static Pointer namespoofptr = new Pointer("Minecraft.Windows.exe", 0x0, new int[] { 0x0 });
-        public string newname = "InputText";
+        public static string newname = "InputText";
 
         public static void Tick10()
         {

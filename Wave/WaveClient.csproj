@@ -117,9 +117,14 @@
     <Compile Include="lib\cmr\Cmr.Win32.cs" />
     <Compile Include="WaveClient\Console\WaveClient.Main.cs" />
     <Compile Include="WaveClient\Data\WaveClient.CommunicationData.cs" />
+    <Compile Include="WaveClient\ModuleManagment\Modules\AirWalk.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\AnvilCost.cs" />
-    <Compile Include="WaveClient\ModuleManagment\Modules\Autosprint.cs" />
+    <Compile Include="WaveClient\ModuleManagment\Modules\AutoSneak.cs" />
+    <Compile Include="WaveClient\ModuleManagment\Modules\AutoSprint.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\Autoclicker.cs" />
+    <Compile Include="WaveClient\ModuleManagment\Modules\AutoWalk.cs" />
+    <Compile Include="WaveClient\ModuleManagment\Modules\ClickTP.cs" />
+    <Compile Include="WaveClient\ModuleManagment\Modules\NoWeb.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\StickyGround.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\Coords.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\Fly.cs" />

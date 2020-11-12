@@ -105,8 +105,8 @@
                             <ColumnDefinition/>
                             <ColumnDefinition Width="200"/>
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Column="1" x:Name="SModule_Autoclicker" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Autoclicker_Click"/>
-                        <TextBlock x:Name="STextBlock_Autoclicker" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Autoclicker" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                        <Button Grid.Column="1" x:Name="SModule_AutoClicker" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_AutoClicker_Click"/>
+                        <TextBlock x:Name="STextBlock_AutoClicker" HorizontalAlignment="Left" TextWrapping="Wrap" Text="AutoClicker" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
                     </Grid>
                     <Grid x:Name="SGrid_AnvilCost" Height="60">
                         <Grid.ColumnDefinitions>
@@ -140,7 +140,46 @@
                         <Button Grid.Column="1" x:Name="SModule_AirWalk" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_AirWalk_Click"/>
                         <TextBlock x:Name="STextBlock_AirWalk" HorizontalAlignment="Left" TextWrapping="Wrap" Text="AirWalk" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
                     </Grid>
-
+                    <Grid x:Name="SGrid_AutoWalk" Height="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1" x:Name="SModule_AutoWalk" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_AutoWalk_Click"/>
+                        <TextBlock x:Name="STextBlock_AutoWalk" HorizontalAlignment="Left" TextWrapping="Wrap" Text="AutoWalk" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                    </Grid>
+                    <Grid x:Name="SGrid_NoWeb" Height="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1" x:Name="SModule_NoWeb" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_NoWeb_Click"/>
+                        <TextBlock x:Name="STextBlock_NoWeb" HorizontalAlignment="Left" TextWrapping="Wrap" Text="NoWeb" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                    </Grid>
+                    <Grid x:Name="SGrid_AutoSneak" Height="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1" x:Name="SModule_AutoSneak" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_AutoSneak_Click"/>
+                        <TextBlock x:Name="STextBlock_AutoSneak" HorizontalAlignment="Left" TextWrapping="Wrap" Text="AutoSneak" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                    </Grid>
+                    <Grid x:Name="SGrid_ClickTP" Height="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1" x:Name="SModule_ClickTP" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_ClickTP_Click"/>
+                        <TextBlock x:Name="STextBlock_ClickTP" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ClickTP" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                    </Grid>
+                    <Grid x:Name="SGrid_Fly" Height="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1" x:Name="SModule_Fly" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Fly_Click"/>
+                        <TextBlock x:Name="STextBlock_Fly" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Fly" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                    </Grid>
                 </StackPanel>
             </ScrollViewer>
         </Grid>

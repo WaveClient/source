@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace WaveClient.Module
 {
-    public static class Autoclicker
+    public static class AutoClicker
     {
         public static bool ToggleState;
 

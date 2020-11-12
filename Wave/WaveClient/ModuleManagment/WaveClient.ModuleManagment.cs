@@ -26,79 +26,128 @@ namespace WaveClient.ModuleManagment
                     {
                         Module.AirJump.Tick10();
                     }
-                    if(Module.NoFall.ToggleState == true)
+                    if (Module.AirWalk.ToggleState == true)
                     {
-                        Module.NoFall.Tick10();
-                    }
-                    if(Module.AirWalk.ToggleState == true)
-                    {
-                        Module.Phase.ToggleState == false;
-                        //Module.AutoWalk.ToggleState == false;
                         Module.AirWalk.Tick10();
-                    }
-                    if(Module.AirWalk.ToggleState == false)
-                    {
-
-                    }
-                    if (Module.Instabreak.ToggleState == true)
-                    {
-                        Module.Instabreak.Tick10();
-                    }
-                    if (Module.Reach.ToggleState == true)
-                    {
-                        Module.Reach.Tick10();
-                    }
-                    if (Module.NoSwing.ToggleState == true)
-                    {
-                        Module.NoSwing.Tick10();
-                    }
-                    if (Module.Coords.ToggleState == true)
-                    {
-                        Module.Coords.Tick10();
-                    }
-                    if (Module.Speed.ToggleState == true)
-                    {
-                        Module.Speed.Tick10();
-                    }
-                    if (Module.AutoSprint.ToggleState == true)
-                    {
-                        Module.AutoSprint.Tick10();
-                    }
-                    //
-                    if (Module.KillYourSelf.ToggleState == true)
-                    {
-                        Module.KillYourSelf.Enable();
-                    }
-                    if (Module.Phase.ToggleState == true)
-                    {
-                        //Module.Phase.
-                        Module.Phase.Tick10();
-                    }
-                    if (Module.Noclip.ToggleState == true)
-                    {
-                        Module.Noclip.Tick10();
                     }
                     if (Module.AnvilCost.ToggleState == true)
                     {
                         Module.AnvilCost.Tick100();
                     }
+                    if (Module.AutoClicker.ToggleState == true)
+                    {
+                        Module.AutoClicker.Tick10();
+                    }
+                    if (Module.AutoSneak.ToggleState == true)
+                    {
+                        Module.AutoSneak.Enable();
+                    }
+                    if (Module.AutoSprint.ToggleState == true)
+                    {
+                        Module.AutoSprint.Tick10();
+                    }
+                    if (Module.AutoWalk.ToggleState == true)
+                    {
+                        Module.AutoWalk.Tick10();
+                    }
+                    if (Module.ClickTP.ToggleState == true)
+                    {
+                        Module.ClickTP.Tick10();
+                    }
+                    if (Module.Coords.ToggleState == true)
+                    {
+                        Module.Coords.Tick10();
+                    }
+                    if (Module.Fly.ToggleState == true)
+                    {
+                        Module.Fly.Tick10();
+                    }
                     if (Module.HighJump.ToggleState == true)
                     {
                         Module.HighJump.Tick10();
+                    }
+                    if (Module.Instabreak.ToggleState == true)
+                    {
+                        Module.Instabreak.Tick10();
+                    }
+                    if (Module.KillYourSelf.ToggleState == true)
+                    {
+                        Module.KillYourSelf.Enable();
+                    }
+                    if (Module.Noclip.ToggleState == true)
+                    {
+                        Module.Noclip.Tick10();
+                    }
+                    if (Module.NoFall.ToggleState == true)
+                    {
+                        Module.NoFall.Tick10();
+                    }
+                    if (Module.NoSwing.ToggleState == true)
+                    {
+                        Module.NoSwing.Tick10();
+                    }
+                    if (Module.NoWeb.ToggleState == true)
+                    {
+                        Module.NoWeb.Enable();
+                    }
+                    if (Module.Phase.ToggleState == true)
+                    {
+                        Module.Phase.Tick10();
+                    }
+                    if (Module.Speed.ToggleState == true)
+                    {
+                        Module.Speed.Tick10();
                     }
                     if (Module.StickyGround.ToggleState == true)
                     {
                         Module.StickyGround.Tick10();
                     }
-                    ///////////////////
-                    //////////////////
-                    ///////////////////
-                    /////////////////
+                    //////////////////////////////
+                    //////////////////////////////
+                    ///////////////////////////////
+                    //////////////////////////////////
+                    ///////////////////////////////////
                     if (Module.AirJump.ToggleState == false)
                     {
-                        
+
                     }
-                    if(Module.NoFall.ToggleState == false)
+                    if (Module.AirWalk.ToggleState == false)
+                    {
+
+                    }
+                    if (Module.AnvilCost.ToggleState == false)
+                    {
+
+                    }
+                    if (Module.AutoClicker.ToggleState == false)
+                    {
+
+                    }
+                    if (Module.AutoSneak.ToggleState == false)
+                    {
+
+                    }
+                    if (Module.AutoSprint.ToggleState == false)
+                    {
+
+                    }
+                    if (Module.AutoWalk.ToggleState == false)
+                    {
+
+                    }
+                    if (Module.ClickTP.ToggleState == false)
+                    {
+
+                    }
+                    if (Module.Coords.ToggleState == false)
+                    {
+                        Module.Coords.Disable();
+                    }
+                    if (Module.Fly.ToggleState == false)
+                    {
+
+                    }
+                    if (Module.HighJump.ToggleState == false)
                     {
 
                     }
@@ -106,58 +155,39 @@ namespace WaveClient.ModuleManagment
                     {
                         Module.Instabreak.Disable();
                     }
-                    if (Module.Reach.ToggleState == false)
-                    {
-                        Module.Reach.Disable();
-                    }
-                    if (Module.NoSwing.ToggleState == false)
-                    {
-                        Module.NoSwing.Disable();
-                    }
-                    if (Module.Coords.ToggleState == false)
-                    {
-                        Module.Coords.Disable();
-                    }
-                    if (Module.Speed.ToggleState == false)
+                    if (Module.KillYourSelf.ToggleState == false)
                     {
 
-                    }
-                    if (Module.AutoSprint.ToggleState == false)
-                    {
-                        
-                    }
-                    if (Module.Phase.ToggleState == false)
-                    {
-                        Module.Phase.Disable();
                     }
                     if (Module.Noclip.ToggleState == false)
                     {
                         Module.Noclip.Disable();
                     }
-                    if(Module.Autoclicker.ToggleState == false)
+                    if (Module.NoFall.ToggleState == false)
                     {
-                        
+
                     }
-                    if (Module.KillYourSelf.ToggleState == false)
+                    if (Module.NoSwing.ToggleState == false)
                     {
-                        
+                        Module.NoSwing.Disable();
                     }
-                    if (Module.Noclip.ToggleState == false)
+                    if (Module.NoWeb.ToggleState == false)
                     {
-                        
+                        Module.NoWeb.Disable();
                     }
-                    if (Module.AnvilCost.ToggleState == false)
+                    if (Module.Phase.ToggleState == false)
                     {
-                        
+                        Module.Phase.Disable();
                     }
-                    if (Module.HighJump.ToggleState == false)
+                    if (Module.Speed.ToggleState == false)
                     {
-                       
+
                     }
                     if (Module.StickyGround.ToggleState == false)
                     {
 
                     }
+
                 }
             }
 

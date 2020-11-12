@@ -23,7 +23,7 @@ namespace WaveClient.Module
             float velXval = (float)Math.Cos(cYaw) * walkval;
             float velZval = (float)Math.Sin(cYaw) * walkval;
             Memory0.mem.WriteMemory(velx, velXval);
-            Memory0.mem.WriteMemoy(velz, velZval);
+            Memory0.mem.WriteMemory(velz, velZval);
         }
     }
     

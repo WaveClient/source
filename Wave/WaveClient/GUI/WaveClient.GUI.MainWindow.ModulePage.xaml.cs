@@ -45,6 +45,7 @@ namespace WaveClient.GUI
         public void UpdateGUI(object sender, EventArgs e)
         {
             SModule_Airjump.Content = GUIExtensions.GetBoolStateText(Module.AirJump.ToggleState);
+            SModule_AutoSneak.Content = GUIExtensions.GetBoolStateText(Module.AutoSneak.ToggleState);
             SModule_NoFall.Content = GUIExtensions.GetBoolStateText(Module.NoFall.ToggleState);
             SModule_Instabreak.Content = GUIExtensions.GetBoolStateText(Module.Instabreak.ToggleState);
             SModule_Reach.Content = GUIExtensions.GetBoolStateText(Module.Reach.ToggleState);
@@ -55,11 +56,15 @@ namespace WaveClient.GUI
             SModule_KillYourSelf.Content = GUIExtensions.GetBoolStateText(Module.KillYourSelf.ToggleState);
             SModule_Phase.Content = GUIExtensions.GetBoolStateText(Module.Phase.ToggleState);
             SModule_Noclip.Content = GUIExtensions.GetBoolStateText(Module.Noclip.ToggleState);
-            SModule_Autoclicker.Content = GUIExtensions.GetBoolStateText(Module.Autoclicker.ToggleState);
+            SModule_AutoClicker.Content = GUIExtensions.GetBoolStateText(Module.AutoClicker.ToggleState);
             SModule_AnvilCost.Content = GUIExtensions.GetBoolStateText(Module.AnvilCost.ToggleState);
             SModule_HighJump.Content = GUIExtensions.GetBoolStateText(Module.HighJump.ToggleState);
             SModule_StickyGround.Content = GUIExtensions.GetBoolStateText(Module.StickyGround.ToggleState);
             SModule_AirWalk.Content = GUIExtensions.GetBoolStateText(Module.AirWalk.ToggleState);
+            SModule_AutoWalk.Content = GUIExtensions.GetBoolStateText(Module.AutoWalk.ToggleState);
+            SModule_NoWeb.Content = GUIExtensions.GetBoolStateText(Module.NoWeb.ToggleState);
+            SModule_ClickTP.Content = GUIExtensions.GetBoolStateText(Module.ClickTP.ToggleState);
+            SModule_Fly.Content = GUIExtensions.GetBoolStateText(Module.Fly.ToggleState);
         }
 
         private void SModule_Airjump_Click(object sender, RoutedEventArgs e)
@@ -118,10 +123,10 @@ namespace WaveClient.GUI
             Module.Noclip.ToggleState = !Module.Noclip.ToggleState;
             SModule_Noclip.Content = GUIExtensions.GetBoolStateText(Module.Noclip.ToggleState);
         }
-        private void SModule_Autoclicker_Click(object sender, RoutedEventArgs e)
+        private void SModule_AutoClicker_Click(object sender, RoutedEventArgs e)
         {
-            Module.Autoclicker.ToggleState = !Module.Autoclicker.ToggleState;
-            SModule_Autoclicker.Content = GUIExtensions.GetBoolStateText(Module.Autoclicker.ToggleState);
+            Module.AutoClicker.ToggleState = !Module.AutoClicker.ToggleState;
+            SModule_AutoClicker.Content = GUIExtensions.GetBoolStateText(Module.AutoClicker.ToggleState);
         }
         private void SModule_AnvilCost_Click(object sender, RoutedEventArgs e)
         {
@@ -142,6 +147,31 @@ namespace WaveClient.GUI
         {
             Module.AirWalk.ToggleState = !Module.AirWalk.ToggleState;
             SModule_StickyGround.Content = GUIExtensions.GetBoolStateText(Module.AirWalk.ToggleState);
+        }
+        private void SModule_AutoWalk_Click(object sender, RoutedEventArgs e)
+        {
+            Module.AutoWalk.ToggleState = !Module.AutoWalk.ToggleState;
+            SModule_AutoWalk.Content = GUIExtensions.GetBoolStateText(Module.AutoWalk.ToggleState);
+        }
+        private void SModule_NoWeb_Click(object sender, RoutedEventArgs e)
+        {
+            Module.NoWeb.ToggleState = !Module.NoWeb.ToggleState;
+            SModule_NoWeb.Content = GUIExtensions.GetBoolStateText(Module.NoWeb.ToggleState);
+        }
+        private void SModule_ClickTP_Click(object sender, RoutedEventArgs e)
+        {
+            Module.ClickTP.ToggleState = !Module.ClickTP.ToggleState;
+            SModule_ClickTP.Content = GUIExtensions.GetBoolStateText(Module.ClickTP.ToggleState);
+        }
+        private void SModule_AutoSneak_Click(object sender, RoutedEventArgs e)
+        {
+            Module.AutoSneak.ToggleState = !Module.AutoSneak.ToggleState;
+            SModule_AutoSneak.Content = GUIExtensions.GetBoolStateText(Module.AutoSneak.ToggleState);
+        }
+        private void SModule_Fly_Click(object sender, RoutedEventArgs e)
+        {
+            Module.Fly.ToggleState = !Module.Fly.ToggleState;
+            SModule_Fly.Content = GUIExtensions.GetBoolStateText(Module.Fly.ToggleState);
         }
     }
 }

@@ -12,7 +12,7 @@ namespace WaveClient.Module
         public static bool ToggleState;
 
         static Pointer lookingblockyptr = new Pointer("Minecraft.Windows.exe", 0x0, new int[] { 0x0 });
-        static float LOOKINGBLOCKY = Memory.mem.ReadFloat(lookingblockyptr)
+        static float LOOKINGBLOCKY = Memory0.mem.ReadFloat(lookingblockyptr);
 
         public static void Tick10()
         {/*
