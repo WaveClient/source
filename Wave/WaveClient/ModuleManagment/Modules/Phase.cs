@@ -24,7 +24,7 @@ namespace WaveClient.Module
         static float Y1 = Memory0.mem.ReadFloat(ypos);
         static float Y2 = Memory0.mem.ReadFloat(ypos2);
 
-        //
+        /////
         public static void Tick10()
         {
             float Y2v = Y1;
@@ -33,10 +33,9 @@ namespace WaveClient.Module
         //
         public static void Disable()
         {
-           // float Y2 = Y1 + 1.8f;
-           // Memory0.mem.WriteMemory(ypos, Y2);
+           //float Y2 = Y1 + 1.8f;
+           //Memory0.mem.WriteMemory(ypos, Y2);
         }
-        //
     }
 
 }
