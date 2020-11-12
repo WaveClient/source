@@ -145,7 +145,7 @@ namespace WaveClient.ModuleManagment
                     }
                     if (Module.Fly.ToggleState == false)
                     {
-
+                        Module.Fly.Disable();
                     }
                     if (Module.HighJump.ToggleState == false)
                     {

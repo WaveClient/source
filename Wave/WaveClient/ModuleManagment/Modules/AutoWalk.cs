@@ -9,7 +9,7 @@ namespace WaveClient.Module
     {
         public static bool ToggleState;
 
-        static Pointer yawptr = new Pointer("Minecraft.Windows.exe", 0x0, new int[] { 0x0 });
+        static Pointer yawptr = new Pointer("Minecraft.Windows.exe", 0x036556E8, new int[] { 0xA8, 0x58, 0x20, 0x68, 0x0, 0x40, 0x8F4 });
         static Pointer yvelo = new Pointer("Minecraft.Windows.exe", 0x036A0288, new int[] { 0x68, 0x8, 0x18, 0x88, 0x80, 0xBB8, 0x498 });
         static Pointer velx = new Pointer("Minecraft.Windows.exe", 0x036A0288, new int[] { 0x68, 0x8, 0x18, 0x88, 0x80, 0xBB8, 0x498 - 4 });
         static Pointer velz = new Pointer("Minecraft.Windows.exe", 0x036A0288, new int[] { 0x68, 0x8, 0x18, 0x88, 0x80, 0xBB8, 0x498 + 4 });
