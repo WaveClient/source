@@ -17,8 +17,8 @@ namespace WaveClient.Module
         public static void Tick10()
         {
             float yelov = val;
-            float idk = -0.10f;
-            float idfk = 0.5f;
+            float idk = 1f;
+            float idfk = -0.5f;
             if (yelov <= idk) yelov = idfk;
             Memory0.mem.WriteMemory(yvelo, yelov);
         }
