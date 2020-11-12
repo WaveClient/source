@@ -194,7 +194,7 @@ namespace Wave.Cmr.MemoryManagement
             WriteProcessMemory(this.hProc, (IntPtr)address, value, 4, out _);
         }
     
-        public void WriteMemoryNoValue<T>(int address, ulong offset)
+        public void WriteMemoryNoValue(int address, ulong offset)
         {
             WriteProcessMemory(this.hProc, (IntPtr)address + offset);
         }
