@@ -11,11 +11,12 @@ namespace WaveClient.Module
     {
         public static bool ToggleState;
 
-        static Pointer SpeedPointer = new Pointer("Minecraft.Windows.exe", 0x0, new int[] { 0x0 });
+        static Pointer namespoofptr = new Pointer("Minecraft.Windows.exe", 0x0, new int[] { 0x0 });
+        public string newname = "InputText";
 
         public static void Tick10()
         {
-            //Memory0.mem.WriteMemory(SpeedPointer, 1f);
+            //Memory0.mem.WriteMemory(namespoofptr, newname);
         }
 
     }
