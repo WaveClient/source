@@ -6,7 +6,7 @@
         xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
         xmlns:local="clr-namespace:WaveClient.GUI"
         mc:Ignorable="d"
-        Title="Wave Client" Height="450" Width="520" AllowsTransparency="True" WindowStyle="None" MinWidth="520" MinHeight="380" Icon="ICON64.ico">
+        Title="Wave Client" Height="450" Width="520" AllowsTransparency="True" WindowStyle="None" MinWidth="520" MinHeight="380" Icon="ICON64.ico" Topmost="True">
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="32" GlassFrameThickness="8" TextBlock.FontFamily="Consolas" TextBlock.FontSize="18" TextBlock.Foreground="White"/>
     </WindowChrome.WindowChrome>
