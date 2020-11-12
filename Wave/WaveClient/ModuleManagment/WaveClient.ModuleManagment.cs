@@ -32,6 +32,8 @@ namespace WaveClient.ModuleManagment
                     }
                     if(Module.AirWalk.ToggleState == true)
                     {
+                        Module.Phase.ToggleState == false;
+                        //Module.AutoWalk.ToggleState == false;
                         Module.AirWalk.Tick10();
                     }
                     if(Module.AirWalk.ToggleState == false)
