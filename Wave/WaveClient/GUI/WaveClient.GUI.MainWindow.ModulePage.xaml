@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WaveClient.GUI"
       mc:Ignorable="d" 
-      d:DesignHeight="740.32"
+      d:DesignHeight="908.599"
       Title="WaveClient" Width="530">
 
     <Grid>
@@ -131,6 +131,14 @@
                         </Grid.ColumnDefinitions>
                         <Button Grid.Column="1" x:Name="SModule_StickyGround" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_StickyGround_Click"/>
                         <TextBlock x:Name="STextBlock_StickyGround" HorizontalAlignment="Left" TextWrapping="Wrap" Text="StickyGround" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                    </Grid>
+                    <Grid x:Name="SGrid_AirWalk" Height="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1" x:Name="SModule_AirWalk" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_AirWalk_Click"/>
+                        <TextBlock x:Name="STextBlock_AirWalk" HorizontalAlignment="Left" TextWrapping="Wrap" Text="AirWalk" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
                     </Grid>
 
                 </StackPanel>

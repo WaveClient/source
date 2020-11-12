@@ -30,6 +30,14 @@ namespace WaveClient.ModuleManagment
                     {
                         Module.NoFall.Tick10();
                     }
+                    if(Module.AirWalk.ToggleState == true)
+                    {
+                        Module.AirWalk.Tick10();
+                    }
+                    if(Module.AirWalk.ToggleState == false)
+                    {
+
+                    }
                     if (Module.Instabreak.ToggleState == true)
                     {
                         Module.Instabreak.Tick10();
