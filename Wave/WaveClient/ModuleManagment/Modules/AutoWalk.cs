@@ -1,9 +1,7 @@
 using System;
 using WaveClient.ModuleManagment;
 using Wave.Cmr.MemoryManagement;
-using System.Runtime.InteropServices;
 using System.Windows.Input;
-using System.Net.NetworkInformation;
 
 namespace WaveClient.Module
 {
