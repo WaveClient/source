@@ -125,7 +125,7 @@ namespace WaveClient.ModuleManagment
                     }
                     if (Module.AutoSneak.ToggleState == false)
                     {
-
+                        Module.AutoSneak.Disable();
                     }
                     if (Module.AutoSprint.ToggleState == false)
                     {

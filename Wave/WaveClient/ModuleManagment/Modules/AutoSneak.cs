@@ -15,9 +15,12 @@ namespace WaveClient.Module
 
         public static void Enable()
         {
-
-            Memory0.mem.WriteMemoryNoValue(autosneakptr);
+            Memory0.mem.PatchMemory("Minecraft.Windows.exe", 0x10513A0, new byte[] { 0xEB });
         }
-        
+        public static void Disable()
+        {
+            Memory0.mem.PatchMemory("Minecraft.Windows.exe", 0x10513A0, new byte[] { 0x75 });
+        }
     }
+}
     
