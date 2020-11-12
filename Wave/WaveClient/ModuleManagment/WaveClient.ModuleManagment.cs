@@ -72,7 +72,18 @@ namespace WaveClient.ModuleManagment
                     {
                         Module.AnvilCost.Tick100();
                     }
+                    if (Module.HighJump.ToggleState == true)
+                    {
+                        Module.HighJump.Tick10();
+                    }
+                    if (Module.StickyGround.ToggleState == true)
+                    {
+                        Module.StickyGround.Tick10();
+                    }
                     ///////////////////
+                    //////////////////
+                    ///////////////////
+                    /////////////////
                     if (Module.AirJump.ToggleState == false)
                     {
                         
@@ -115,11 +126,7 @@ namespace WaveClient.ModuleManagment
                     }
                     if(Module.Autoclicker.ToggleState == false)
                     {
-                        Module.Autoclicker.Tick10();
-                    }
-                    if(Module.Autoclicker.ToggleState == false)
-                    {
-
+                        
                     }
                     if (Module.KillYourSelf.ToggleState == false)
                     {
@@ -128,6 +135,18 @@ namespace WaveClient.ModuleManagment
                     if (Module.Noclip.ToggleState == false)
                     {
                         
+                    }
+                    if (Module.AnvilCost.ToggleState == false)
+                    {
+                        
+                    }
+                    if (Module.HighJump.ToggleState == false)
+                    {
+                       
+                    }
+                    if (Module.StickyGround.ToggleState == false)
+                    {
+
                     }
                 }
             }

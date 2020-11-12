@@ -27,8 +27,8 @@ namespace WaveClient.Module
         //
         public static void Tick10()
         {
-           // float Y2 = Y1;
-            //Memory0.mem.WriteMemory(ypos, Y2);
+            float Y2v = Y1;
+            Memory0.mem.WriteMemory(ypos2, Y2v);
         }
         //
         public static void Disable()
