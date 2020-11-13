@@ -135,6 +135,7 @@ namespace WaveClient.GUI
         }
         private void SModule_HighJump_Click(object sender, RoutedEventArgs e)
         {
+            //if (e.Key == Key.Space)
             Module.HighJump.ToggleState = !Module.HighJump.ToggleState;
             SModule_HighJump.Content = GUIExtensions.GetBoolStateText(Module.HighJump.ToggleState);
         }
@@ -172,6 +173,17 @@ namespace WaveClient.GUI
         {
             Module.Fly.ToggleState = !Module.Fly.ToggleState;
             SModule_Fly.Content = GUIExtensions.GetBoolStateText(Module.Fly.ToggleState);
+        }
+        private void OnKeyDownHandler(object sender, KeyEventArgs e)
+        {
+        static Pointer yveloptr = new Pointer("Minecraft.Windows.exe", 0x036A0288, new int[] { 0x68, 0x8, 0x18, 0x88, 0x80, 0xBB8, 0x498 });
+        static Pointer ongroundptr = new Pointer("Minecraft.Windows.exe", 0x036A0278, new int[] { 0x0, 0x20, 0x90, 0x5B0, 0xD8, 0x18, 0x1A0 });
+        static float ongroundvalue = Memory0.mem.ReadFloat(ongroundptr);
+        static float jumpvalue = 4f;
+        if (e.Key == Key.Space)
+        {
+         Memory0.mem.WriteMemory(yveloptr, jumpvalue);
+        }
         }
     }
 }
