@@ -1,5 +1,6 @@
 ﻿using WaveClient.ModuleManagment;
 using WaveClient.ModuleManagment.ModuleExtensions;
+using Wave.Cmr.MemoryManagement;
 using System;
 using System.Collections.Generic;
 using System.Linq;
