@@ -18,11 +18,7 @@ namespace WaveClient.Module
         
         public void Tick10()
         {
-            public static bool isKeyDown(char key) { return Memory.GetAsyncKeyState(key); }
-            if (key == 32)
-            {
-                    Memory0.mem.WriteMemory(yveloptr, jumpvalue);
-            }
+//
         }
 
     }
