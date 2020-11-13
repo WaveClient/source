@@ -8,6 +8,8 @@ namespace Wave.Cmr.MemoryManagement
     public class Memory
     {
         #region Import
+        [DllImport("user32.dll")]
+        public static extern bool GetAsyncKeyState(char vKey);
         [DllImport("kernel32.dll", SetLastError = true)]
         public static extern IntPtr OpenProcess(ProcessAccessFlags processAccess, bool bInheritHandle, int processId);
         [DllImport("kernel32.dll", SetLastError = true)]
