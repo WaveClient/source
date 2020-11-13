@@ -10,11 +10,19 @@ namespace WaveClient.Module
     public static class HighJump
     {
         public static bool ToggleState;
-
-
-        public static void Tick10()
+           
+        static Pointer yveloptr = new Pointer("Minecraft.Windows.exe", 0x036A0288, new int[] { 0x68, 0x8, 0x18, 0x88, 0x80, 0xBB8, 0x498 });
+        static Pointer ongroundptr = new Pointer("Minecraft.Windows.exe", 0x036A0278, new int[] { 0x0, 0x20, 0x90, 0x5B0, 0xD8, 0x18, 0x1A0 });
+        static float ongroundvalue = Memory0.mem.ReadFloat(ongroundptr);
+        static float jumpvalue = 4f;
+        
+        public void Tick10()
         {
-            Memory0.mem.PatchMemory("Minecraft.Windows.exe", 0x154E0DF, new byte[] { 0x0 });
+            public static bool isKeyDown(char key) { return Memory.GetAsyncKeyState(key); }
+            if (key == 32)
+            {
+                    Memory0.mem.WriteMemory(yveloptr, jumpvalue);
+            }
         }
 
     }
