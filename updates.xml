@@ -1,1 +1,17 @@
+<?xml version="1.0"?>
 
+<updates>
+  <update type="minor" version="1" extensionVersion="1" 
+          detailsURL="https://google.com" isOSUpdate="true">
+    <patch type="partial" URL="https://google.com"
+           hashFunction="" hashValue="" size=""/>
+    <patch type="complete" URL="https://google.com"
+           hashFunction="" hashValue="" size=""/>
+  </update>
+  ..
+  <update type="major" version="1" extensionVersion="1"
+          detailsURL="https://google.com" isOSUpdate="true">
+    <patch type="complete" URL="https://google.com"
+           hashFunction="" hashValue="" size=""/>
+  </update>
+</updates>
