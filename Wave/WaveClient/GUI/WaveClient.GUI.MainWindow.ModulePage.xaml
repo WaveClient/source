@@ -261,6 +261,9 @@
                                     </StackPanel>
                                 </Grid>
                             </TabItem>
+                            <TabItem Header="Credits" Background="{x:Null}" Foreground="Blue">
+                                <TextBlock x:Name="Credits" HorizontalAlignment="Left" TextWrapping="Wrap" Text="The creator's: Milo, No c990, Gamerb.class" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20"></TextBlock>
+                            </TabItem>
 
 
 
