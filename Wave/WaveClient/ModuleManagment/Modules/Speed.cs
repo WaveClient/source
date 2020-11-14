@@ -18,6 +18,10 @@ namespace WaveClient.Module
             Memory0.mem.WriteMemory(SpeedPointer, 1f);
         }
 
+        public static void Disable()
+        {
+            Memory0.mem.WriteMemory(SpeedPointer, 0.1000000015f);
+        }
     }
 
 }

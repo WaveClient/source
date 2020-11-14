@@ -189,7 +189,7 @@ namespace WaveClient.ModuleManagment
                     }
                     if (Module.Speed.ToggleState == false)
                     {
-
+                        Module.Speed.Disable();
                     }
                     if (Module.StickyGround.ToggleState == false)
                     {
