@@ -67,6 +67,7 @@ namespace WaveClient.GUI
             SModule_ClickTP.Content = GUIExtensions.GetBoolStateText(Module.ClickTP.ToggleState);
             SModule_Fly.Content = GUIExtensions.GetBoolStateText(Module.Fly.ToggleState);
             SModule_DownGlide.Content = GUIExtensions.GetBoolStateText(Module.DownGlide.ToggleState);
+            SModule_BypassGlide.Content = GUIExtensions.GetBoolStateText(Module.BypassGlide.ToggleState);
         }
 
         private void SModule_Airjump_Click(object sender, RoutedEventArgs e)
@@ -181,6 +182,11 @@ namespace WaveClient.GUI
             Module.DownGlide.ToggleState = !Module.DownGlide.ToggleState;
             SModule_DownGlide.Content = GUIExtensions.GetBoolStateText(Module.DownGlide.ToggleState);
         }
+        private void SModuleBypassGlide_Click(object sender, RoutedEventArgs e)
+        {
+            Module.BypassGlide.ToggleState = !Module.BypassGlide.ToggleState;
+            SModule_BypassGlide.Content = GUIExtensions.GetBoolStateText(Module.BypassGlide.ToggleState);
+        }
         private void OnKeyDownHandler(object sender, KeyEventArgs e)
         {
             Pointer yveloptr = new Pointer("Minecraft.Windows.exe", 0x036A0288, new int[] { 0x68, 0x8, 0x18, 0x88, 0x80, 0xBB8, 0x498 });
@@ -192,5 +198,7 @@ namespace WaveClient.GUI
          Memory0.mem.WriteMemory(yveloptr, jumpvalue);
         }
         }
+
+        
     }
 }

@@ -26,6 +26,14 @@ namespace WaveClient.ModuleManagment
                     {
                         Module.AirJump.Tick10();
                     }
+                    if(Module.BypassGlide.ToggleState == true)
+                    {
+                        Module.BypassGlide.Tick10();
+                    }
+                    if(Module.BypassGlide.ToggleState == false)
+                    {
+
+                    }
                     if(Module.DownGlide.ToggleState == true)
                     {
                         Module.DownGlide.Tick10();
