@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-
 <updates>
-  <Title="Test" Text="Testing" Link="https://google.com">
+      <Title>Test</Title>
+      <Text>idfk</Text>
+      <Link>https://google.com</Link>
 </updates>
