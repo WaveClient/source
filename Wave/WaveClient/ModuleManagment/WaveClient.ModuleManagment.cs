@@ -30,18 +30,11 @@ namespace WaveClient.ModuleManagment
                     {
                         Module.BypassGlide.Tick10();
                     }
-                    if(Module.BypassGlide.ToggleState == false)
-                    {
-
-                    }
                     if(Module.DownGlide.ToggleState == true)
                     {
                         Module.DownGlide.Tick10();
                     }
-                    if(Module.DownGlide.ToggleState == false)
-                    {
-
-                    }
+                    
                     if (Module.AirWalk.ToggleState == true)
                     {
                         Module.AirWalk.Tick10();
@@ -123,6 +116,14 @@ namespace WaveClient.ModuleManagment
                     ///////////////////////////////
                     //////////////////////////////////
                     ///////////////////////////////////
+                    if(Module.DownGlide.ToggleState == false)
+                    {
+
+                    }
+                    if (Module.BypassGlide.ToggleState == false)
+                    {
+
+                    }
                     if (Module.AirJump.ToggleState == false)
                     {
 
@@ -197,7 +198,7 @@ namespace WaveClient.ModuleManagment
                     }
                     if (Module.Speed.ToggleState == false)
                     {
-                        Module.Speed.Disable();
+
                     }
                     if (Module.StickyGround.ToggleState == false)
                     {

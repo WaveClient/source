@@ -22,6 +22,11 @@ namespace WaveClient.Module
         {
             Memory0.mem.WriteMemory(SpeedPointer, 0.1000000015f);
         }
+
+        public static void Disable2()
+        {
+
+        }
     }
 
 }
