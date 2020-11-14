@@ -66,6 +66,7 @@ namespace WaveClient.GUI
             SModule_NoWeb.Content = GUIExtensions.GetBoolStateText(Module.NoWeb.ToggleState);
             SModule_ClickTP.Content = GUIExtensions.GetBoolStateText(Module.ClickTP.ToggleState);
             SModule_Fly.Content = GUIExtensions.GetBoolStateText(Module.Fly.ToggleState);
+            SModule_DownGlide.Content = GUIExtensions.GetBoolStateText(Module.DownGlide.ToggleState);
         }
 
         private void SModule_Airjump_Click(object sender, RoutedEventArgs e)
@@ -174,6 +175,11 @@ namespace WaveClient.GUI
         {
             Module.Fly.ToggleState = !Module.Fly.ToggleState;
             SModule_Fly.Content = GUIExtensions.GetBoolStateText(Module.Fly.ToggleState);
+        }
+        private void SModuleDownGlide_Click(object sender, RoutedEventArgs e)
+        {
+            Module.DownGlide.ToggleState = !Module.DownGlide.ToggleState;
+            SModule_DownGlide.Content = GUIExtensions.GetBoolStateText(Module.DownGlide.ToggleState);
         }
         private void OnKeyDownHandler(object sender, KeyEventArgs e)
         {

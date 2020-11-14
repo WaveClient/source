@@ -124,6 +124,7 @@
     <Compile Include="WaveClient\ModuleManagment\Modules\Autoclicker.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\AutoWalk.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\ClickTP.cs" />
+    <Compile Include="WaveClient\ModuleManagment\Modules\DownGlide.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\NoWeb.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\StickyGround.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\Coords.cs" />
