@@ -323,5 +323,7 @@ namespace Wave.Cmr.MemoryManagement
             this.PointerAddress = PointerAddress;
             this.Offsets = Offsets;
         }
+
+        
     }
 }

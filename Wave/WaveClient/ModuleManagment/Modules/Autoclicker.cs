@@ -17,7 +17,14 @@ namespace WaveClient.Module
 
         public static void Tick10()
         {
-            //Memory0.mem.WriteMemory(ClickDelay, 0);
+            while (true)
+            {
+                int Click = Memory0.mem.ReadInt(ClickDelay);
+                if (Click == 1)
+                {
+                    Memory0.mem.WriteMemory(ClickDelay, 0);
+                }
+            }
         }
     }
 }

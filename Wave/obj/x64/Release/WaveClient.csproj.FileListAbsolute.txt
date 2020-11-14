@@ -38,3 +38,23 @@ C:\Users\bjorn\OneDrive\Documenten\GitHub\Wave external\source\Wave\obj\x64\Rele
 C:\Users\bjorn\OneDrive\Documenten\GitHub\Wave external\source\Wave\obj\x64\Release\WaveClient.Properties.Resources.resources
 C:\Users\bjorn\OneDrive\Documenten\GitHub\Wave external\source\Wave\obj\x64\Release\WaveClient.csproj.GenerateResource.cache
 C:\Users\bjorn\OneDrive\Documenten\GitHub\Wave external\source\Wave\obj\x64\Release\WaveClient.csproj.CoreCompileInputs.cache
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\bin\x64\Release\WaveClient.exe.config
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\bin\x64\Release\WaveClient.exe
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\bin\x64\Release\WaveClient.pdb
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\WaveClient.csprojAssemblyReference.cache
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\WaveClient\GUI\Controls\Styles\WaveClient.GUI.Controls.Styles.SC_Button.baml
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\WaveClient\GUI\Controls\Styles\WaveClient.GUI.Controls.Styles.SC_ScrollViewer.baml
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\WaveClient\GUI\WaveClient.GUI.MainWindow.ModulePage.g.cs
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\WaveClient\GUI\MainWindow.g.cs
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\App.g.cs
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\WaveClient_MarkupCompile.cache
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\WaveClient_MarkupCompile.lref
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\App.baml
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\WaveClient\GUI\WaveClient.GUI.MainWindow.ModulePage.baml
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\WaveClient\GUI\MainWindow.baml
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\WaveClient.g.resources
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\WaveClient.Properties.Resources.resources
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\WaveClient.csproj.GenerateResource.cache
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\WaveClient.csproj.CoreCompileInputs.cache
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\WaveClient.exe
+C:\Users\bjorn\OneDrive\Documenten\GitHub\wave\source\Wave\obj\x64\Release\WaveClient.pdb
