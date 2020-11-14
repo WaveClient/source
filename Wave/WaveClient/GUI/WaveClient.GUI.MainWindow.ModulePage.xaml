@@ -12,7 +12,7 @@
         <Grid>
             <ScrollViewer HorizontalAlignment="Left">
                 <StackPanel VerticalAlignment="Top" Width="500">
-                    <Grid x:Name="ModuleShower" Margin="0,60,0,10">
+                    <Grid x:Name="ModuleShower" Margin="0,10,0,10">
                         <TabControl Margin="10,0,10,10" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
                             <TabItem Header="Movement" Background="{x:Null}" Foreground="Blue">
                                 <Grid>
