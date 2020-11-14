@@ -16,7 +16,7 @@ namespace WaveClient.Module
         static float ongroundvalue = Memory0.mem.ReadFloat(ongroundptr);
         static float jumpvalue = 4f;
         
-        public void Tick10()
+        public static void Tick10()
         {
 //
         }
