@@ -143,22 +143,6 @@
                                             <Button Grid.Column="1" x:Name="SModule_NoWeb" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_NoWeb_Click"/>
                                             <TextBlock x:Name="STextBlock_NoWeb" HorizontalAlignment="Left" TextWrapping="Wrap" Text="NoWeb" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
                                         </Grid>
-                                        <Grid x:Name="SGrid_Instabreak" Height="60">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition/>
-                                                <ColumnDefinition Width="200"/>
-                                            </Grid.ColumnDefinitions>
-                                            <Button Grid.Column="1" x:Name="SModule_Instabreak" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Instabreak_Click"/>
-                                            <TextBlock x:Name="STextBlock_Instabreak" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Instabreak" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
-                                        </Grid>
-                                        <Grid x:Name="SGrid_Reach" Height="60">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition/>
-                                                <ColumnDefinition Width="200"/>
-                                            </Grid.ColumnDefinitions>
-                                            <Button Grid.Column="1" x:Name="SModule_Reach" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Reach_Click"/>
-                                            <TextBlock x:Name="STextBlock_Reach" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Reach" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
-                                        </Grid>
                                         <Grid x:Name="SGrid_NoSwing" Height="60">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition/>
@@ -189,6 +173,14 @@
                                             <Button Grid.Column="1" x:Name="SModule_Coords" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Coords_Click"/>
                                             <TextBlock x:Name="STextBlock_Coords" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Coords" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
                                         </Grid>
+                                        <Grid x:Name="SGrid_Instabreak" Height="60">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition Width="200"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Button Grid.Column="1" x:Name="SModule_Instabreak" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Instabreak_Click"/>
+                                            <TextBlock x:Name="STextBlock_Instabreak" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Instabreak" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                                        </Grid>
                                     </StackPanel>
                                 </Grid>
                             </TabItem>
@@ -199,6 +191,17 @@
                                         <ColumnDefinition Width="48*"/>
                                     </Grid.ColumnDefinitions>
                                     <StackPanel VerticalAlignment="Top" Margin="10,10,10.4,-0.4" Grid.ColumnSpan="2">
+                                        <Grid x:Name="SGrid_Reach" Height="60">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition Width="200"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Button Grid.Column="1" x:Name="SModule_Reach" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Reach_Click"/>
+                                            <TextBlock x:Name="STextBlock_Reach" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Reach" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                                        </Grid>
+                                        <Grid>
+                                            <TextBlock x:Name="STextBlock_Note_Combat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Note: autoclicker needs to be fixed for it to work so it's coming" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                                        </Grid>
                                         <Grid x:Name="SGrid_AutoClicker" Height="60">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition/>
