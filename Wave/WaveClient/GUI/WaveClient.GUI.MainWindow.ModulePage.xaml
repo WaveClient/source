@@ -13,8 +13,8 @@
             <ScrollViewer HorizontalAlignment="Left">
                 <StackPanel VerticalAlignment="Top" Width="500">
                     <Grid x:Name="ModuleShower" Margin="0,10,0,10">
-                        <TabControl Margin="10,0,10,10" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">
-                            <TabItem Header="Movement" Background="{x:Null}" Foreground="Blue">
+                        <TabControl Margin="10,0,10,10" Foreground="{x:Null}" BorderBrush="LightBlue" Background="White">
+                            <TabItem Header="Movement" Background="LightBlue" Foreground="Blue">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="46*"/>
@@ -116,7 +116,7 @@
                                     </StackPanel>
                                 </Grid>
                             </TabItem>
-                            <TabItem Header="Player" Background="{x:Null}" Foreground="Blue" Margin="0.4,-2,-4.4,-0.2">
+                            <TabItem Header="Player" Background="LightBlue" Foreground="Blue" Margin="0.4,-2,-4.4,-0.2">
                                 <Grid>
                                     <StackPanel VerticalAlignment="Top" Margin="10,10,10,0">
                                         <Grid x:Name="SGrid_Phase" Height="60">
@@ -162,7 +162,7 @@
                                     </StackPanel>
                                 </Grid>
                             </TabItem>
-                            <TabItem Header="World" Background="{x:Null}" Foreground="Blue" Margin="0.4,-2,-4.4,-0.2">
+                            <TabItem Header="World" Background="LightBlue" Foreground="Blue" Margin="0.4,-2,-4.4,-0.2">
                                 <Grid>
                                     <StackPanel VerticalAlignment="Top" Margin="10,10,10,0">
                                         <Grid x:Name="SGrid_Coords" Height="60">
@@ -184,7 +184,7 @@
                                     </StackPanel>
                                 </Grid>
                             </TabItem>
-                            <TabItem Header="Combat" Background="{x:Null}" Foreground="Blue" Margin="0.4,-2,-4.4,-0.2">
+                            <TabItem Header="Combat" Background="LightBlue" Foreground="Blue" Margin="0.4,-2,-4.4,-0.2">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="31*"/>
@@ -213,7 +213,15 @@
                                     </StackPanel>
                                 </Grid>
                             </TabItem>
-                            <TabItem Header="Other" Background="{x:Null}" Foreground="Blue" Margin="0.4,-2,-4.4,-0.2">
+                            <TabItem Header="Other" Background="LightBlue" Foreground="Blue" Margin="0.4,-2,-4.4,-0.2" RenderTransformOrigin="0.5,0.5">
+                                <TabItem.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="-1.45"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </TabItem.RenderTransform>
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="31*"/>
@@ -247,7 +255,7 @@
                                     </StackPanel>
                                 </Grid>
                             </TabItem>
-                            <TabItem Header="Settings" Background="{x:Null}" Foreground="Blue" Margin="0.4,-2,-4.4,-0.2">
+                            <TabItem Header="Settings" Background="LightBlue" Foreground="Blue" Margin="0.4,-2,-4.4,-0.2">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="32*"/>
@@ -261,7 +269,7 @@
                                     </StackPanel>
                                 </Grid>
                             </TabItem>
-                            <TabItem Header="Credits" Background="{x:Null}" Foreground="Blue">
+                            <TabItem Header="Credits" Background="LightBlue" Foreground="Blue">
                                 <TextBlock x:Name="Credits" HorizontalAlignment="Left" TextWrapping="Wrap" Text="The creator's: Milo, No c990, Gamerb.class" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20"></TextBlock>
                             </TabItem>
 
