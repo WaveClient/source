@@ -17,11 +17,10 @@ namespace WaveClient.Module
 
         public static void Tick10()
         {
-            float GravityyVal = 0.4f;
             float Y1 = Memory0.mem.ReadFloat(ypos);
             float Y2 = Memory0.mem.ReadFloat(ypos2);
 
-            Memory0.mem.WriteMemory(yvelo, GravityyVal);
+            Memory0.mem.WriteMemory(yvelo, -0.02f);
             Memory0.mem.WriteMemory(ypos, Y1);
             Memory0.mem.WriteMemory(ypos2, Y2);
         }
