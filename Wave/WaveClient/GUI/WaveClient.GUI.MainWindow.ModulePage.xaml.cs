@@ -61,7 +61,6 @@ namespace WaveClient.GUI
             SModule_Reach.Content = GUIExtensions.GetBoolStateText(Module.Reach.ToggleState);
             SModule_NoSwing.Content = GUIExtensions.GetBoolStateText(Module.NoSwing.ToggleState);
             SModule_Coords.Content = GUIExtensions.GetBoolStateText(Module.Coords.ToggleState);
-            SModule_Speed.Content = GUIExtensions.GetBoolStateText(Module.Speed.ToggleState);
             SModule_AutoSprint.Content = GUIExtensions.GetBoolStateText(Module.AutoSprint.ToggleState);
             SModule_KillYourSelf.Content = GUIExtensions.GetBoolStateText(Module.KillYourSelf.ToggleState);
             SModule_Phase.Content = GUIExtensions.GetBoolStateText(Module.Phase.ToggleState);
@@ -78,8 +77,13 @@ namespace WaveClient.GUI
             SModule_DownGlide.Content = GUIExtensions.GetBoolStateText(Module.DownGlide.ToggleState);
             SModule_BypassGlide.Content = GUIExtensions.GetBoolStateText(Module.BypassGlide.ToggleState);
             SModule_NameSpoof.Content = GUIExtensions.GetBoolStateText(Module.NameSpoof.ToggleState);
+            //setting FullBright
             label_value_module_FullBright2.Content = SModule_FullBright.Value;
             Module.Fullbright.NewBrightness = (float)(SModule_FullBright.Value);
+
+            //settingSpeed
+            label_value_module_Speed2.Content = SModule_Speed.Value;
+            Module.Speed.NewSpeed = (float)(SModule_Speed.Value);
 
             /////
             ///
@@ -120,11 +124,6 @@ namespace WaveClient.GUI
         {
             Module.Coords.ToggleState = !Module.Coords.ToggleState;
             SModule_Coords.Content = GUIExtensions.GetBoolStateText(Module.Coords.ToggleState);
-        }
-        private void SModule_Speed_Click(object sender, RoutedEventArgs e)
-        {
-            Module.Speed.ToggleState = !Module.Speed.ToggleState;
-            SModule_Speed.Content = GUIExtensions.GetBoolStateText(Module.Speed.ToggleState);
         }
         private void SModule_AutoSprint_Click(object sender, RoutedEventArgs e)
         {

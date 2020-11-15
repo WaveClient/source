@@ -29,14 +29,6 @@
                                             <Button Grid.Column="1" x:Name="SModule_Airjump" Style="{StaticResource SC_Button}" Content="On" Margin="5" Foreground="Black" Click="SModule_Airjump_Click"/>
                                             <TextBlock x:Name="STextBlock_Airjump" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Airjump" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
                                         </Grid>
-                                        <Grid x:Name="SGrid_Speed" Height="60">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition/>
-                                                <ColumnDefinition Width="200"/>
-                                            </Grid.ColumnDefinitions>
-                                            <Button Grid.Column="1" x:Name="SModule_Speed" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Speed_Click"/>
-                                            <TextBlock x:Name="STextBlock_Speed" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Speed" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
-                                        </Grid>
                                         <Grid x:Name="SGrid_Noclip" Height="60">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition/>
@@ -273,7 +265,7 @@
                                     </Grid.ColumnDefinitions>
                                     <StackPanel VerticalAlignment="Top" Margin="10,10,10.4,0" Grid.ColumnSpan="3">
                                         <Grid>
-                                            <TextBlock x:Name="Coming_soon" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Coming soon" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="LightGreen" FontSize="20"></TextBlock>
+                                            <TextBlock x:Name="Coming_soon" HorizontalAlignment="Left" TextWrapping="Wrap" Text="These Are Always on" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Blue" FontSize="20"></TextBlock>
                                         </Grid>
                                         <Grid>
                                             <Grid.ColumnDefinitions>
@@ -285,31 +277,26 @@
                                             <Label x:Name="label_value_module_FullBright" Content="Brightness level" Foreground="Black" Margin="0,80,100,0" VerticalAlignment="Top"/>
                                             <Label x:Name="label_value_module_FullBright2" Content="0" Foreground="Black" Margin="100,80,100,0" VerticalAlignment="Top"/>
                                         </Grid>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition Width="200"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock x:Name="STextBlock_Speed" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Speed" VerticalAlignment="Center" Margin="10,-15,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                                            <Slider x:Name="SModule_Speed" Maximum="10" Background="Blue" BorderBrush="LightBlue" Foreground="White" Margin="0,55,0,0" Height="30" SmallChange="5" LargeChange="1" TickFrequency="50" TickPlacement="BottomRight" IsSnapToTickEnabled="True" VerticalAlignment="Top" Value="0.1000000015"/>
+                                            <Label x:Name="label_value_module_Speed" Content="Speed Value" Foreground="Black" Margin="0,80,100,0" VerticalAlignment="Top"/>
+                                            <Label x:Name="label_value_module_Speed2" Content="0" Foreground="Black" Margin="100,80,100,0" VerticalAlignment="Top"/>
+                                            
+                                        </Grid>
+                                        <Grid>
+                                            <Label x:Name="label_value_module_Speed_Discription" Content="Walk speed: 0.1 Run speed: 0.13" Foreground="Black" Margin="0,0,100,0" VerticalAlignment="Top"/>
+                                        </Grid>
                                     </StackPanel>
                                 </Grid>
                             </TabItem>
                             <TabItem Header="Credits" Background="LightBlue" Foreground="Blue">
                                 <TextBlock x:Name="Credits" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Developers: javascript, gamerb.class, Noc990" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20"></TextBlock>
                             </TabItem>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         </TabControl>
                     </Grid>
                 </StackPanel>

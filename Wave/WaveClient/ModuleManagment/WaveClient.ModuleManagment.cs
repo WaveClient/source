@@ -210,10 +210,6 @@ namespace WaveClient.ModuleManagment
                     {
                         Module.Phase.Disable();
                     }
-                    if (Module.Speed.ToggleState == false)
-                    {
-
-                    }
                     if (Module.StickyGround.ToggleState == false)
                     {
 

@@ -13,15 +13,12 @@ namespace WaveClient.Module
 
         static Pointer SpeedPointer = new Pointer("Minecraft.Windows.exe", 0x03655720, new int[] { 0xA8, 0x58, 0x38, 0x10, 0x438, 0x18, 0x1F0, 0x9C });
 
+        public static float NewSpeed;
         public static void Tick10()
         {
-            Memory0.mem.WriteMemory(SpeedPointer, 1f);
+            Memory0.mem.WriteMemory(SpeedPointer, NewSpeed);
         }
-
-        public static void Disable()
-        {
-            Memory0.mem.WriteMemory(SpeedPointer, 0.1000000015f);
-        }
+        //0.1000000015
     }
 
 }
