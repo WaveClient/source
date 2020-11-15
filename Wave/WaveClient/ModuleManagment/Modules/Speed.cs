@@ -9,7 +9,7 @@ namespace WaveClient.Module
 
     public static class Speed
     {
-        public static bool ToggleState;
+        public static bool ToggleState = true;
 
         static Pointer SpeedPointer = new Pointer("Minecraft.Windows.exe", 0x03655720, new int[] { 0xA8, 0x58, 0x38, 0x10, 0x438, 0x18, 0x1F0, 0x9C });
 
