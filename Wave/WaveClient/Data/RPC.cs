@@ -28,11 +28,14 @@ namespace WaveClient.Data
                 {
                     LargeImageKey = "wave",
                     LargeImageText = "Wave Client on Top!",
-                    SmallImageKey = "wave",
-                    SmallImageText = "Hello there <3"
+                    SmallImageKey = "wave"
                 }
             });
             client.Invoke();
+        }
+        public static void exitrpc()
+        {
+            client.Dispose();
         }
 
     }

@@ -6,11 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using DiscordRPC;
 
 namespace WaveClient
 {
     public static class WaveClientConsole
     {
+        public static DiscordRpcClient client;
+
         public static void Start(string[] args)
         {
             cmr.MaximizeConsole();
@@ -21,6 +24,19 @@ namespace WaveClient
             cmr.MinimizeConsole();
             cmr.clogl($"{cmr.cf(100, 108, 143)}WaveClient", "Loading Modules");
             Console.WriteLine($"{cmr.cf(100, 108, 143)}Made by Milo and the Wave Development Team!");
+            client = new DiscordRpcClient("774759053834321961");
+            client.Initialize();
+            client.SetPresence(new RichPresence()
+            {
+                Details = "Using Wave Client!",
+                State = "Updated Daily!",
+                Assets = new Assets()
+                {
+                    LargeImageKey = "wave",
+                    LargeImageText = "Wave Client on Top!",
+                    SmallImageKey = "wave"
+                }
+            });
             Thread.Sleep(100);
             ModuleManagment.ModuleManager.MemoryUpdate.StartTickThread();
         }

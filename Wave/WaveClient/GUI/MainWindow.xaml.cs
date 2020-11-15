@@ -89,24 +89,12 @@ namespace WaveClient.GUI
             //overlay.InitializeComponent();
             //overlay.Show();
 
-            client = new DiscordRpcClient("774759053834321961");
-            client.Initialize();
-            client.SetPresence(new RichPresence()
-            {
-                Details = "Using Wave Client!",
-                State = "Updated Daily!",
-                Assets = new Assets()
-                {
-                    LargeImageKey = "wave",
-                    LargeImageText = "Wave Client on Top!",
-                    SmallImageKey = "wave"
-                }
-            });
         }
         private void Control_Close_MouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             this.Close();
-            client.Dispose();
+            WaveClient.Data.RPC.exitrpc();
+
             cmr.ExitApplication();
         }
 

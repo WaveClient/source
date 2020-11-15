@@ -221,6 +221,7 @@ namespace Wave.Cmr
         public static void ExitApplication()
         {
             Console.WriteLine($"{cr}\n{cf(255, 140, 46)}Exiting... \n");
+            WaveClient.Data.RPC.exitrpc();
             Environment.Exit(0);
         }
     }
