@@ -1,2 +1,2 @@
-Added a namespoof module (experimental)
-Other Small Changes
+Added DiscordRPC
+Added namespoof
