@@ -16,6 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using DiscordRPC;
 
 namespace WaveClient.GUI
 {
@@ -26,6 +27,7 @@ namespace WaveClient.GUI
     {
         DispatcherTimer UpdateGUIDispatcherTimer;
         public string namespooftext;
+        public DiscordRpcClient client;
 
         public MainWindow_ModulePage()
         {
@@ -37,6 +39,8 @@ namespace WaveClient.GUI
             UpdateGUIDispatcherTimer.Tick += new EventHandler(UpdateGUI);
             UpdateGUIDispatcherTimer.Start();
             #endregion
+
+            
         }
 
         ~MainWindow_ModulePage()
@@ -74,10 +78,26 @@ namespace WaveClient.GUI
             /////
             ///
             //namespooftextbox.Text = namespooftext;
+
+            client = new DiscordRpcClient("774759053834321961");
+            client.Initialize();
+            client.SetPresence(new RichPresence()
+            {
+                Details = "Using Wave Client!",
+                State = "https://discord.gg/WfVRdMuzTC",
+                Assets = new Assets()
+                {
+                    LargeImageKey = "wave",
+                    LargeImageText = "Wave Client on Top!",
+                    SmallImageKey = "wave",
+                    SmallImageText = "Hello there <3"
+                }
+            }) ;
+
         }
 
 
-    private void SModule_Airjump_Click(object sender, RoutedEventArgs e)
+        private void SModule_Airjump_Click(object sender, RoutedEventArgs e)
         {
             Module.AirJump.ToggleState = !Module.AirJump.ToggleState;
             SModule_Airjump.Content = GUIExtensions.GetBoolStateText(Module.AirJump.ToggleState);
