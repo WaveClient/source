@@ -82,8 +82,16 @@ namespace WaveClient.GUI
             Module.Fullbright.NewBrightness = (float)(SModule_FullBright.Value);
 
             //settingSpeed
+            
             label_value_module_Speed2.Content = SModule_Speed.Value;
+            /*
+            if ((bool)(label_value_module_Speed2.Content = 0))
+            {
+                return;
+            } */
+            
             Module.Speed.NewSpeed = (float)(SModule_Speed.Value);
+
 
             /////
             ///

@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WaveClient.GUI"
       mc:Ignorable="d" 
-      d:DesignHeight="908.599"
+      d:DesignHeight="9010"
       Title="WaveClient" Width="530">
 
     <Grid>
@@ -13,7 +13,7 @@
             <ScrollViewer HorizontalAlignment="Left">
                 <StackPanel VerticalAlignment="Top" Width="500">
                     <Grid x:Name="ModuleShower" Margin="0,10,0,10">
-                        <TabControl Margin="10,0,10,10" Foreground="{x:Null}" BorderBrush="LightBlue" Background="White">
+                        <TabControl Foreground="{x:Null}" BorderBrush="LightBlue" Background="White">
                             <TabItem Header="Movement" BorderThickness="2" BorderBrush="Blue" Background="White" Foreground="Blue">
                                 <Border Background="White" BorderBrush="Blue" BorderThickness="5">
                                     <Grid>
@@ -110,7 +110,7 @@
                                     </Grid>
                                 </Border>
                             </TabItem>
-                            <TabItem Header="Player" BorderThickness="2" BorderBrush="Blue" Background="White" Foreground="Blue" Margin="0.4,-2,-4.4,-0.2">
+                            <TabItem Header="Player" BorderThickness="2" BorderBrush="Blue" Background="White" Foreground="Blue">
                                 <Border Background="White" BorderBrush="Blue" BorderThickness="5">
                                     <Grid>
                                         <StackPanel VerticalAlignment="Top" Margin="10,10,10,0">
@@ -167,7 +167,7 @@
                                     </Grid>
                                 </Border>
                             </TabItem>
-                            <TabItem Header="World" BorderThickness="2" BorderBrush="Blue" Background="White" Foreground="Blue" Margin="0.4,-2,-4.4,-0.2">
+                            <TabItem Header="World" BorderThickness="2" BorderBrush="Blue" Background="White" Foreground="Blue">
                                 <Border Background="White" BorderBrush="Blue" BorderThickness="5">
                                     <Grid>
                                         <StackPanel VerticalAlignment="Top" Margin="10,10,10,0">
@@ -191,7 +191,7 @@
                                     </Grid>
                                 </Border>
                             </TabItem>
-                            <TabItem Header="Combat" BorderThickness="2" BorderBrush="Blue" Background="White" Foreground="Blue" Margin="0.4,-2,-4.4,-0.2" >
+                            <TabItem Header="Combat" BorderThickness="2" BorderBrush="Blue" Background="White" Foreground="Blue">
                                 <Border Background="White" BorderBrush="Blue" BorderThickness="5">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
@@ -222,7 +222,7 @@
                                     </Grid>
                                 </Border>
                             </TabItem>
-                            <TabItem Header="Other" BorderThickness="2" BorderBrush="Blue" Background="White" Foreground="Blue" Margin="-2,1,-1.8,-3.2">
+                            <TabItem Header="Other" BorderThickness="2" BorderBrush="Blue" Background="White" Foreground="Blue">
                                 <TabItem.RenderTransform>
                                     <TransformGroup>
                                         <ScaleTransform/>
@@ -266,7 +266,7 @@
                                     </Grid>
                                 </Border>
                             </TabItem>
-                            <TabItem Header="Settings" BorderThickness="2" BorderBrush="Blue" Background="White" Foreground="Blue" Margin="0.4,-2,-4.4,-0.2">
+                            <TabItem Header="Settings" BorderThickness="2" BorderBrush="Blue" Background="White" Foreground="Blue">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="32*"/>
@@ -297,7 +297,7 @@
                                                         <ColumnDefinition Width="200"/>
                                                     </Grid.ColumnDefinitions>
                                                     <TextBlock x:Name="STextBlock_Speed" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Speed" VerticalAlignment="Center" Margin="10,-15,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
-                                                    <Slider x:Name="SModule_Speed" Maximum="5" Background="Blue" BorderBrush="LightBlue" Foreground="White" Margin="10,55,0,0" Height="30" SmallChange="5" LargeChange="10" TickFrequency="0.1" TickPlacement="BottomRight" IsSnapToTickEnabled="True" VerticalAlignment="Top" Value="0.1000000015"/>
+                                                    <Slider x:Name="SModule_Speed" Maximum="5" Background="Blue" BorderBrush="LightBlue" Foreground="White" Margin="10,55,0,0" Height="30" SmallChange="5" LargeChange="10" TickFrequency="0.1" TickPlacement="BottomRight" IsSnapToTickEnabled="True" VerticalAlignment="Top" Value="0"/>
                                                     <Label x:Name="label_value_module_Speed" Content="Speed Value" Foreground="Black" Margin="0,80,100,0" VerticalAlignment="Top"/>
                                                     <Label x:Name="label_value_module_Speed2" Content="0" Foreground="Black" Margin="100,80,100,0" VerticalAlignment="Top"/>
 

@@ -70,7 +70,7 @@ namespace WaveClient.GUI
         #endregion
 
         //Overlay overlay;
-        public DiscordRpcClient client;
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -94,7 +94,6 @@ namespace WaveClient.GUI
         {
             this.Close();
             WaveClient.Data.RPC.exitrpc();
-
             cmr.ExitApplication();
         }
 
