@@ -1,3 +1,4 @@
-Make the GUI lit af
 Fix DiscordRPC again smh
 Find more developers!
+Work on autoclicker
+Make the GUI good!
