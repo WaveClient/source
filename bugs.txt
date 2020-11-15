@@ -1,2 +1,4 @@
 Autoclicker
 AutoWalk
+Phase is buggy
+ClickTP
