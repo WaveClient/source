@@ -95,7 +95,7 @@
                                                 <ColumnDefinition Width="200"/>
                                             </Grid.ColumnDefinitions>
                                             <Button Grid.Column="1" x:Name="SModule_HighJump" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_HighJump_Click"/>
-                                            <TextBlock x:Name="STextBlock_HighJump" KeyDown="OnKeyDownHandler" HorizontalAlignment="Left" TextWrapping="Wrap" Text="HighJump" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                                            <TextBlock x:Name="STextBlock_HighJump" HorizontalAlignment="Left" TextWrapping="Wrap" Text="HighJump" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
                                         </Grid>
                                         <Grid x:Name="SGrid_Fly" Height="60">
                                             <Grid.ColumnDefinitions>

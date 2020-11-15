@@ -187,18 +187,14 @@ namespace WaveClient.GUI
             Module.BypassGlide.ToggleState = !Module.BypassGlide.ToggleState;
             SModule_BypassGlide.Content = GUIExtensions.GetBoolStateText(Module.BypassGlide.ToggleState);
         }
-        private void OnKeyDownHandler(object sender, KeyEventArgs e)
+
+        private void SModule_NameSpoof_Click(object sender, RoutedEventArgs e)
         {
-            Pointer yveloptr = new Pointer("Minecraft.Windows.exe", 0x036A0288, new int[] { 0x68, 0x8, 0x18, 0x88, 0x80, 0xBB8, 0x498 });
-        Pointer ongroundptr = new Pointer("Minecraft.Windows.exe", 0x036A0278, new int[] { 0x0, 0x20, 0x90, 0x5B0, 0xD8, 0x18, 0x1A0 });
-        float ongroundvalue = Memory0.mem.ReadFloat(ongroundptr);
-         float jumpvalue = 4f;
-        if (e.Key == Key.Space)
-        {
-         Memory0.mem.WriteMemory(yveloptr, jumpvalue);
-        }
+            Module.Fly.ToggleState = !Module.Fly.ToggleState;
+            SModule_Fly.Content = GUIExtensions.GetBoolStateText(Module.Fly.ToggleState);
         }
 
-        
+
+
     }
 }
