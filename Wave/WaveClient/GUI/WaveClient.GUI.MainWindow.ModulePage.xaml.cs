@@ -222,6 +222,8 @@ namespace WaveClient.GUI
             SModule_NameSpoof.Content = GUIExtensions.GetBoolStateText(Module.NameSpoof.ToggleState);
             //Console.WriteLine(namespooftext);
         }
+        
+
 
 
 
