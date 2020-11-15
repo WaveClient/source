@@ -17,6 +17,8 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DiscordRPC;
+using WaveClient.Data;
 
 namespace WaveClient.GUI
 {
@@ -87,10 +89,11 @@ namespace WaveClient.GUI
             //overlay.InitializeComponent();
             //overlay.Show();
         }
-
+        public DiscordRpcClient client;
         private void Control_Close_MouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             this.Close();
+            client.Dispose();
             cmr.ExitApplication();
         }
 
