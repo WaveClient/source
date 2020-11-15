@@ -53,6 +53,7 @@ namespace WaveClient.GUI
 
         public void UpdateGUI(object sender, EventArgs e)
         {
+
             SModule_Airjump.Content = GUIExtensions.GetBoolStateText(Module.AirJump.ToggleState);
             SModule_AutoSneak.Content = GUIExtensions.GetBoolStateText(Module.AutoSneak.ToggleState);
             SModule_NoFall.Content = GUIExtensions.GetBoolStateText(Module.NoFall.ToggleState);
@@ -77,12 +78,14 @@ namespace WaveClient.GUI
             SModule_DownGlide.Content = GUIExtensions.GetBoolStateText(Module.DownGlide.ToggleState);
             SModule_BypassGlide.Content = GUIExtensions.GetBoolStateText(Module.BypassGlide.ToggleState);
             SModule_NameSpoof.Content = GUIExtensions.GetBoolStateText(Module.NameSpoof.ToggleState);
+            label_value_module_FullBright2.Content = SModule_FullBright.Value;
+            Module.Fullbright.NewBrightness = (float)(SModule_FullBright.Value);
 
             /////
             ///
             //namespooftextbox.Text = namespooftext;
 
-            
+
 
         }
 

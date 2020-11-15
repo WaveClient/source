@@ -11,7 +11,6 @@ namespace WaveClient.Module
 
         static Pointer autosneakptr = new Pointer("Minecraft.Windows.exe", 0x10513A0, new int[] { 0xEB });
         static Pointer autosneakptrdisabled = new Pointer("Minecraft.Windows.exe", 0x10513A0, new int[] { 0x75 });
-        static float sneakvalue;
 
         public static void Enable()
         {

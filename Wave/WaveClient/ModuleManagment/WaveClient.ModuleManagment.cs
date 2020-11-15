@@ -57,6 +57,10 @@ namespace WaveClient.ModuleManagment
                     {
                         Module.AutoSneak.Enable();
                     }
+                    if(Module.Fullbright.ToggleState == true)
+                    {
+                        Module.Fullbright.Tick10();
+                    }
                     if (Module.AutoSprint.ToggleState == true)
                     {
                         Module.AutoSprint.Tick10();
