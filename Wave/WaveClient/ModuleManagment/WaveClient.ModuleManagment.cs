@@ -117,6 +117,10 @@ namespace WaveClient.ModuleManagment
                     {
                         Module.Speed.Tick10();
                     }
+                    if(Module.Speed.ToggleState == false)
+                    {
+
+                    }
                     if (Module.StickyGround.ToggleState == true)
                     {
                         Module.StickyGround.Tick10();
