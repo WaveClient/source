@@ -16,19 +16,11 @@ namespace WaveClient.Module
         public static float NewSpeed;
         public static void Tick10()
         {
-<<<<<<< Updated upstream
+
             if (NewSpeed != 0)
             {
                 Memory0.mem.WriteMemory(SpeedPointer, NewSpeed);
             }
-
-=======
-            if(NewSpeed != 0)
-            {
-                Memory0.mem.WriteMemory(SpeedPointer, NewSpeed);
-            }
-            
->>>>>>> Stashed changes
         }
         // normal speed (walk)0.1000000015
     }
