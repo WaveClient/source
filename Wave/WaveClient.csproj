@@ -115,13 +115,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="lib\cmr\Cmr.Color.cs" />
-    <Compile Include="lib\cmr\Cmr.cs" />
-    <Compile Include="lib\cmr\Cmr.Font.cs" />
-    <Compile Include="lib\cmr\Cmr.Input.cs" />
-    <Compile Include="lib\cmr\Cmr.Main.cs" />
-    <Compile Include="lib\cmr\Cmr.MemoryManagement.cs" />
-    <Compile Include="lib\cmr\Cmr.Win32.cs" />
+    <Compile Include="WaveClient\lib\cmr\Cmr.Color.cs" />
+    <Compile Include="WaveClient\lib\cmr\Cmr.cs" />
+    <Compile Include="WaveClient\lib\cmr\Cmr.Font.cs" />
+    <Compile Include="WaveClient\lib\cmr\Cmr.Input.cs" />
+    <Compile Include="WaveClient\lib\cmr\Cmr.Main.cs" />
+    <Compile Include="WaveClient\lib\cmr\Cmr.MemoryManagement.cs" />
+    <Compile Include="WaveClient\lib\cmr\Cmr.Win32.cs" />
     <Compile Include="WaveClient\Console\WaveClient.Main.cs" />
     <Compile Include="WaveClient\Data\RPC.cs" />
     <Compile Include="WaveClient\Data\WaveClient.CommunicationData.cs" />

@@ -22,6 +22,14 @@
                                             <ColumnDefinition Width="191*"/>
                                         </Grid.ColumnDefinitions>
                                         <StackPanel VerticalAlignment="Top" Margin="10,10,10.4,-0.4" Grid.ColumnSpan="2">
+                                            <Grid x:Name="SGrid_Jetpack" Height="60">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition Width="200"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Button Grid.Column="1" x:Name="SModule_JetPack" Style="{StaticResource SC_Button}" Content="On" Margin="5" Foreground="Black" Click="SModule_Jetpack_Click"/>
+                                                <TextBlock x:Name="STextBlock_JetPack" HorizontalAlignment="Left" TextWrapping="Wrap" Text="JetPack" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                                            </Grid>
                                             <Grid x:Name="SGrid_Airjump" Height="60">
                                                 <Grid.ColumnDefinitions>
                                                     <ColumnDefinition/>

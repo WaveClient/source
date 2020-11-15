@@ -25,15 +25,20 @@ namespace WaveClient.Module
         static Pointer zpos2 = new Pointer("Minecraft.Windows.exe", 0x036A0278, new int[] { 0x8, 0x18, 0x80, 0x5B0, 0xB0, 0xF8, 0X460 + 12 });
         static Pointer zvelo = new Pointer("Minecraft.Windows.exe", 0x036A0288, new int[] { 0x68, 0x8, 0x18, 0x88, 0x80, 0xBB8, 0x49C });
 
-        public static float SpeedValue;
+        public static float SpeedValue = 0.4f;
 
         public static void Tick10()
         {
-            if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.F))
+            if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.Space))
             {
-                xvelo = (float)Math.Cos(yaw) * (float)Math.Cos(pitch);
-                yvelo = -(float)Math.Sin(pitch);
-                zvelo = (float)Math.Sin(yaw) * (float)Math.Cos(pitch);
+                Memory0.mem.WriteMemory(yvelo, +SpeedValue);
+
+            }else if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.LeftShift))
+            {
+                Memory0.mem.WriteMemory(yvelo, -SpeedValue);
+            }
+            else { 
+
             }
         }
     }

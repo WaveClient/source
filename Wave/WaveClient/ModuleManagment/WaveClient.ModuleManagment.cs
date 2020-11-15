@@ -40,7 +40,14 @@ namespace WaveClient.ModuleManagment
                     {
                         Module.DownGlide.Tick10();
                     }
-                    
+                    if(Module.Jetpack.ToggleState == true)
+                    {
+                        Module.Jetpack.Tick10();
+                    }
+                    if(Module.Jetpack.ToggleState == false)
+                    {
+
+                    }
                     if (Module.AirWalk.ToggleState == true)
                     {
                         Module.AirWalk.Tick10();

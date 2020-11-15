@@ -77,6 +77,8 @@ namespace WaveClient.GUI
             SModule_DownGlide.Content = GUIExtensions.GetBoolStateText(Module.DownGlide.ToggleState);
             SModule_BypassGlide.Content = GUIExtensions.GetBoolStateText(Module.BypassGlide.ToggleState);
             SModule_NameSpoof.Content = GUIExtensions.GetBoolStateText(Module.NameSpoof.ToggleState);
+            SModule_JetPack.Content = GUIExtensions.GetBoolStateText(Module.Jetpack.ToggleState);
+
             //setting FullBright
             label_value_module_FullBright2.Content = SModule_FullBright.Value;
             Module.Fullbright.NewBrightness = (float)(SModule_FullBright.Value);
@@ -107,7 +109,11 @@ namespace WaveClient.GUI
             Module.AirJump.ToggleState = !Module.AirJump.ToggleState;
             SModule_Airjump.Content = GUIExtensions.GetBoolStateText(Module.AirJump.ToggleState);
         }
-
+        private void SModule_Jetpack_Click(object sender, RoutedEventArgs e)
+        {
+            Module.Jetpack.ToggleState = !Module.Jetpack.ToggleState;
+            SModule_JetPack.Content = GUIExtensions.GetBoolStateText(Module.Jetpack.ToggleState);
+        }
         private void SModule_NoFall_Click(object sender, RoutedEventArgs e)
         {
             Module.NoFall.ToggleState = !Module.NoFall.ToggleState;
