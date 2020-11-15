@@ -1,1 +1,3 @@
 Make the GUI lit af
+Fix DiscordRPC again smh
+Find more developers!
