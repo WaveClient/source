@@ -32,6 +32,7 @@ namespace WaveClient.Data
                     SmallImageText = "Hello there <3"
                 }
             });
+            client.Invoke();
         }
 
     }

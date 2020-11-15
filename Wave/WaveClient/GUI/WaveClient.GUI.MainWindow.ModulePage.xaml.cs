@@ -27,7 +27,7 @@ namespace WaveClient.GUI
     {
         DispatcherTimer UpdateGUIDispatcherTimer;
         public string namespooftext;
-        public DiscordRpcClient client;
+        
 
         public MainWindow_ModulePage()
         {
@@ -47,20 +47,7 @@ namespace WaveClient.GUI
         {
             UpdateGUIDispatcherTimer.Stop();
 
-            client = new DiscordRpcClient("774759053834321961");
-            client.Initialize();
-            client.SetPresence(new RichPresence()
-            {
-                Details = "Using Wave Client!",
-                State = "Updated Daily!",
-                Assets = new Assets()
-                {
-                    LargeImageKey = "wave",
-                    LargeImageText = "Wave Client on Top!",
-                    SmallImageKey = "wave",
-                    SmallImageText = "Hello there <3"
-                }
-            });
+            
 
         }
 

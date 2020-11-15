@@ -70,7 +70,7 @@ namespace WaveClient.GUI
         #endregion
 
         //Overlay overlay;
-
+        public DiscordRpcClient client;
         public MainWindow()
         {
             InitializeComponent();
@@ -88,8 +88,21 @@ namespace WaveClient.GUI
             //overlay = new Overlay();
             //overlay.InitializeComponent();
             //overlay.Show();
+
+            client = new DiscordRpcClient("774759053834321961");
+            client.Initialize();
+            client.SetPresence(new RichPresence()
+            {
+                Details = "Using Wave Client!",
+                State = "Updated Daily!",
+                Assets = new Assets()
+                {
+                    LargeImageKey = "wave",
+                    LargeImageText = "Wave Client on Top!",
+                    SmallImageKey = "wave"
+                }
+            });
         }
-        public DiscordRpcClient client;
         private void Control_Close_MouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             this.Close();
