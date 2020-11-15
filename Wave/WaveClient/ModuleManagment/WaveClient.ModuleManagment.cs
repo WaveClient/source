@@ -8,23 +8,29 @@ using System.Windows.Threading;
 using WaveClient.Module;
 using Wave.Cmr.MemoryManagement;
 using WaveClient.ModuleManagment;
-
+using DiscordRPC;
+using WaveClient.Data;
 
 namespace WaveClient.ModuleManagment
 {
+
+    
     public static class ModuleManager
     {
+
         public static class MemoryUpdate
         {
-
             //
             public static void Tick10()
             {
             while (!ExitTickThread)
+
                 {
                     if(Module.AirJump.ToggleState == true)
                     {
                         Module.AirJump.Tick10();
+                        WaveClient.Data.RPC.Start();
+
                     }
                     if(Module.BypassGlide.ToggleState == true)
                     {

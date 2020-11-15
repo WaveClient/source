@@ -122,6 +122,7 @@
     <Compile Include="lib\cmr\Cmr.MemoryManagement.cs" />
     <Compile Include="lib\cmr\Cmr.Win32.cs" />
     <Compile Include="WaveClient\Console\WaveClient.Main.cs" />
+    <Compile Include="WaveClient\Data\RPC.cs" />
     <Compile Include="WaveClient\Data\WaveClient.CommunicationData.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\AirWalk.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\AnvilCost.cs" />
