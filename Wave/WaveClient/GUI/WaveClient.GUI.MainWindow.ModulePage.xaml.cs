@@ -84,7 +84,7 @@ namespace WaveClient.GUI
             client.SetPresence(new RichPresence()
             {
                 Details = "Using Wave Client!",
-                State = "https://discord.gg/WfVRdMuzTC",
+                State = "Updated Daily!",
                 Assets = new Assets()
                 {
                     LargeImageKey = "wave",
