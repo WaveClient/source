@@ -1,3 +1,4 @@
 Added Sliders
 Added DiscordRPC
 Added namespoof
+added settings tab
