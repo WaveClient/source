@@ -25,6 +25,7 @@ namespace WaveClient.GUI
     public partial class MainWindow_ModulePage : Page
     {
         DispatcherTimer UpdateGUIDispatcherTimer;
+        public string namespooftext;
 
         public MainWindow_ModulePage()
         {
@@ -68,9 +69,15 @@ namespace WaveClient.GUI
             SModule_Fly.Content = GUIExtensions.GetBoolStateText(Module.Fly.ToggleState);
             SModule_DownGlide.Content = GUIExtensions.GetBoolStateText(Module.DownGlide.ToggleState);
             SModule_BypassGlide.Content = GUIExtensions.GetBoolStateText(Module.BypassGlide.ToggleState);
+            SModule_NameSpoof.Content = GUIExtensions.GetBoolStateText(Module.NameSpoof.ToggleState);
+
+            /////
+            ///
+            //namespooftextbox.Text = namespooftext;
         }
 
-        private void SModule_Airjump_Click(object sender, RoutedEventArgs e)
+
+    private void SModule_Airjump_Click(object sender, RoutedEventArgs e)
         {
             Module.AirJump.ToggleState = !Module.AirJump.ToggleState;
             SModule_Airjump.Content = GUIExtensions.GetBoolStateText(Module.AirJump.ToggleState);
@@ -190,8 +197,10 @@ namespace WaveClient.GUI
 
         private void SModule_NameSpoof_Click(object sender, RoutedEventArgs e)
         {
-            Module.Fly.ToggleState = !Module.Fly.ToggleState;
-            SModule_Fly.Content = GUIExtensions.GetBoolStateText(Module.Fly.ToggleState);
+           
+            Module.NameSpoof.ToggleState = !Module.NameSpoof.ToggleState;
+            SModule_NameSpoof.Content = GUIExtensions.GetBoolStateText(Module.NameSpoof.ToggleState);
+            //Console.WriteLine(namespooftext);
         }
 
 

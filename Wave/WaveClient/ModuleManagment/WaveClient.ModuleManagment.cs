@@ -111,12 +111,16 @@ namespace WaveClient.ModuleManagment
                     {
                         Module.StickyGround.Tick10();
                     }
+                    if (Module.NameSpoof.ToggleState == true)
+                    {
+                        Module.NameSpoof.Tick10();
+                    }
                     //////////////////////////////
                     //////////////////////////////
                     ///////////////////////////////
                     //////////////////////////////////
                     ///////////////////////////////////
-                    if(Module.DownGlide.ToggleState == false)
+                    if (Module.DownGlide.ToggleState == false)
                     {
 
                     }
@@ -203,6 +207,10 @@ namespace WaveClient.ModuleManagment
                     if (Module.StickyGround.ToggleState == false)
                     {
 
+                    }
+                    if (Module.NameSpoof.ToggleState == false)
+                    {
+                        //
                     }
 
                 }
