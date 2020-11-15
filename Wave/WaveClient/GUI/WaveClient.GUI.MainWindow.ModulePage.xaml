@@ -298,7 +298,7 @@
                                                     </Grid.ColumnDefinitions>
                                                     <Grid>
                                                         <TextBlock x:Name="STextBlock_Speed" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Speed" VerticalAlignment="Center" Margin="10,-15,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
-                                                        <Slider x:Name="SModule_Speed" Maximum="5" Background="Blue" BorderBrush="LightBlue" Foreground="White" Margin="10,55,0,0" Height="30" SmallChange="5" LargeChange="10" TickFrequency="0.1" TickPlacement="BottomRight" IsSnapToTickEnabled="True" VerticalAlignment="Top" Value="0.2"/>
+                                                        <Slider x:Name="SModule_Speed" Maximum="5" Background="Blue" BorderBrush="LightBlue" Foreground="White" Margin="10,55,0,0" Height="30" SmallChange="5" LargeChange="10" TickFrequency="0.1" TickPlacement="BottomRight" IsSnapToTickEnabled="True" VerticalAlignment="Top" Value="0"/>
                                                         <Label x:Name="label_value_module_Speed" Content="Speed Value" Foreground="Black" Margin="0,80,100,0" VerticalAlignment="Top"/>
                                                         <Label x:Name="label_value_module_Speed2" Content="0" Foreground="Black" Margin="100,80,100,0" VerticalAlignment="Top"/>
                                                     </Grid>
