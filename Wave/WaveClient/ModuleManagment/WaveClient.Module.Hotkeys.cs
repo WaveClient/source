@@ -21,6 +21,29 @@ namespace WaveClient.ModuleManagment
                 Module.AirJump.ToggleState = !Module.AirJump.ToggleState;
                 Thread.Sleep(1000);
             }
+            
+
+
+
+            //hotkey's that automaticly turn off
+            if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.F))
+            {
+                Module.Jetpack.ToggleState = true;
+            }
+            if (cmr_input.GetKeyStateUp(Wave.Cmr.Win32API.Win32.VirtualKeys.F))
+            {
+                Module.Jetpack.ToggleState = false;
+            }
+            if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.C))
+            {
+                Module.BypassGlide.ToggleState = true;
+                
+            }
+            if (cmr_input.GetKeyStateUp(Wave.Cmr.Win32API.Win32.VirtualKeys.C))
+            {
+                Module.BypassGlide.ToggleState = false;
+                
+            }
         }
     }
 }
