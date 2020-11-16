@@ -1,4 +1,4 @@
+Discord RPC 100% works now!!!
 Added Sliders
-Added DiscordRPC
 Added namespoof
 added settings tab
