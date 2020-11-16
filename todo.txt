@@ -1,4 +1,4 @@
-Fix DiscordRPC again smh
+Add icon on the launcher!
 Find more developers!
 Work on autoclicker
 Make the GUI good!
