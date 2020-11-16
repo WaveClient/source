@@ -4,6 +4,7 @@ using Wave.Cmr.MemoryManagement;
 using System.Runtime.InteropServices;
 using System.Windows.Input;
 using WaveClient.SDK;
+using Wave.Cmr;
 
 namespace WaveClient.Module
 {
@@ -16,7 +17,11 @@ namespace WaveClient.Module
         
         public static void Tick10()
         {
-            Memory0.mem.WriteMemory(OnGround, 16777473);
+            if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.Space))
+            {
+                Memory0.mem.WriteMemory(OnGround, 16777473);
+            }
+            
         }
         
     }
