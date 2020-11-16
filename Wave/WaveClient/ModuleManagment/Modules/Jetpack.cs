@@ -29,7 +29,7 @@ namespace WaveClient.Module
 
         public static void Tick10()
         {
-            if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.Space))
+            if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.F))
             {
                 Memory0.mem.WriteMemory(yvelo, +SpeedValue);
 
