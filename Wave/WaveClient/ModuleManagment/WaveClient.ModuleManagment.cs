@@ -26,6 +26,10 @@ namespace WaveClient.ModuleManagment
             while (!ExitTickThread)
 
                 {
+                    if (WaveClientData.DiscordRPC.UsingDiscord)
+                    {
+                        WaveClientData.DiscordRPC.RPC();
+                    }
                     if(WaveClient.UsingHotKeys == true)
                     {
                         WaveClient.HotKeys();

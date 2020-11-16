@@ -16,6 +16,7 @@ namespace WaveClient.ModuleManagment
         public static bool UsingHotKeys = true;
         public static void HotKeys()
         {
+            
             if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.G))
             {
                 Module.AirJump.ToggleState = !Module.AirJump.ToggleState;
@@ -46,16 +47,14 @@ namespace WaveClient.ModuleManagment
                 Module.Fly.ToggleState = !Module.Fly.ToggleState;
                 Thread.Sleep(1000);
             }
-
-            //hotkey's that automaticly turn off when not pressed
             if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.F))
             {
-                Module.Jetpack.ToggleState = true;
+                Module.Jetpack.ToggleState = !Module.Jetpack.ToggleState;
+                Thread.Sleep(1000);
             }
-            if (cmr_input.GetKeyStateUp(Wave.Cmr.Win32API.Win32.VirtualKeys.F))
-            {
-                Module.Jetpack.ToggleState = false;
-            }
+
+
+            //hotkey's that automaticly turn off when not pressed
             if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.C))
             {
                 Module.BypassGlide.ToggleState = true;

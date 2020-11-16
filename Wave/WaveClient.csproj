@@ -125,6 +125,7 @@
     <Compile Include="WaveClient\Console\WaveClient.Main.cs" />
     <Compile Include="WaveClient\Data\RPC.cs" />
     <Compile Include="WaveClient\Data\WaveClient.CommunicationData.cs" />
+    <Compile Include="WaveClient\ModuleManagment\DiscordRPC.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\AirWalk.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\AnvilCost.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\AutoSneak.cs" />
