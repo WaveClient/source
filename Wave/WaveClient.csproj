@@ -126,6 +126,7 @@
     <Compile Include="WaveClient\Data\RPC.cs" />
     <Compile Include="WaveClient\Data\WaveClient.CommunicationData.cs" />
     <Compile Include="WaveClient\ModuleManagment\DiscordRPC.cs" />
+    <Compile Include="WaveClient\ModuleManagment\Hotkeys.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\AirWalk.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\AnvilCost.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\AutoSneak.cs" />
@@ -153,7 +154,6 @@
     <Compile Include="WaveClient\ModuleManagment\Modules\Reach.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\Speed.cs" />
     <Compile Include="WaveClient\ModuleManagment\Modules\Tower.cs" />
-    <Compile Include="WaveClient\ModuleManagment\WaveClient.Module.Hotkeys.cs" />
     <Compile Include="WaveClient\ModuleManagment\WaveClient.ModuleDataRuntime.cs" />
     <Compile Include="WaveClient\ModuleManagment\WaveClient.ModuleExtensions.cs" />
     <Compile Include="WaveClient\ModuleManagment\WaveClient.ModuleManagment.cs" />
