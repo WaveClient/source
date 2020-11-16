@@ -26,11 +26,13 @@ namespace WaveClient.ModuleManagment
             while (!ExitTickThread)
 
                 {
+                    if(WaveClient.UsingHotKeys == true)
+                    {
+                        WaveClient.HotKeys();
+                    }
                     if(Module.AirJump.ToggleState == true)
                     {
                         Module.AirJump.Tick10();
-                        WaveClient.Data.RPC.Start();
-
                     }
                     if(Module.BypassGlide.ToggleState == true)
                     {
