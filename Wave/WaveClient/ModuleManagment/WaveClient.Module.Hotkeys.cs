@@ -20,37 +20,37 @@ namespace WaveClient.ModuleManagment
             if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.G))
             {
                 Module.AirJump.ToggleState = !Module.AirJump.ToggleState;
-                Thread.Sleep(1000);
+                Thread.Sleep(500);
             }
             if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.Numpad3))
             {
                 Module.NoFall.ToggleState = !Module.NoFall.ToggleState;
-                Thread.Sleep(1000);
+                Thread.Sleep(500);
             }
             if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.Numpad2))
             {
                 Module.NoWeb.ToggleState = !Module.NoWeb.ToggleState;
-                Thread.Sleep(1000);
+                Thread.Sleep(500);
             }
             if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.V))
             {
                 Module.Noclip.ToggleState = !Module.Noclip.ToggleState;
-                Thread.Sleep(1000);
+                Thread.Sleep(500);
             }
             if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.Numpad3))
             {
                 Module.NoFall.ToggleState = !Module.NoFall.ToggleState;
-                Thread.Sleep(1000);
+                Thread.Sleep(500);
             }
             if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.Tab))
             {
                 Module.Fly.ToggleState = !Module.Fly.ToggleState;
-                Thread.Sleep(1000);
+                Thread.Sleep(500);
             }
             if (cmr_input.GetKeyStateDown(Wave.Cmr.Win32API.Win32.VirtualKeys.F))
             {
                 Module.Jetpack.ToggleState = !Module.Jetpack.ToggleState;
-                Thread.Sleep(1000);
+                Thread.Sleep(500);
             }
 
 
