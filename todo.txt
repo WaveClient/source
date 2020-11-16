@@ -1,4 +1,5 @@
 Add icon on the launcher!
+Work on tower, autoclicker, scaffold, clickTP
 Find more developers!
 Work on autoclicker
 Make the GUI good!
