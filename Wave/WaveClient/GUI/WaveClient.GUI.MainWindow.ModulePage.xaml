@@ -38,6 +38,14 @@
                                                 <Button Grid.Column="1" x:Name="SModule_Airjump" Style="{StaticResource SC_Button}" Content="On" Margin="5" Foreground="Black" Click="SModule_Airjump_Click"/>
                                                 <TextBlock x:Name="STextBlock_Airjump" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Airjump" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
                                             </Grid>
+                                            <Grid x:Name="SGrid_Fly" Height="60">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition Width="200"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Button Grid.Column="1" x:Name="SModule_Fly" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Fly_Click"/>
+                                                <TextBlock x:Name="STextBlock_Fly" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Fly" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
+                                            </Grid>
                                             <Grid x:Name="SGrid_Noclip" Height="60">
                                                 <Grid.ColumnDefinitions>
                                                     <ColumnDefinition/>
@@ -54,7 +62,6 @@
                                                 <Button Grid.Column="1" x:Name="SModule_AirWalk" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_AirWalk_Click"/>
                                                 <TextBlock x:Name="STextBlock_AirWalk" HorizontalAlignment="Left" TextWrapping="Wrap" Text="AirWalk" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
                                             </Grid>
-
                                             <Grid x:Name="SGrid_DownGlide" Height="60">
                                                 <Grid.ColumnDefinitions>
                                                     <ColumnDefinition/>
@@ -98,14 +105,7 @@
                                                 <Button Grid.Column="1" x:Name="SModule_HighJump" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_HighJump_Click"/>
                                                 <TextBlock x:Name="STextBlock_HighJump" HorizontalAlignment="Left" TextWrapping="Wrap" Text="HighJump" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
                                             </Grid>
-                                            <Grid x:Name="SGrid_Fly" Height="60">
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition/>
-                                                    <ColumnDefinition Width="200"/>
-                                                </Grid.ColumnDefinitions>
-                                                <Button Grid.Column="1" x:Name="SModule_Fly" Style="{StaticResource SC_Button}" Content="On" Margin="5" Click="SModule_Fly_Click"/>
-                                                <TextBlock x:Name="STextBlock_Fly" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Fly" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Black" FontSize="20" FontFamily="Consolas"/>
-                                            </Grid>
+                                            
                                             <Grid x:Name="SGrid_ClickTP" Height="60">
                                                 <Grid.ColumnDefinitions>
                                                     <ColumnDefinition/>

@@ -10,7 +10,7 @@ namespace WaveClient.Module
     {
         public static bool ToggleState;
 
-        static Pointer FlyToggle = new Pointer("Minecraft.Windows", 0x036A0288, new int[] { 0x0, 0x8, 0x20, 0xB8, 0x8B8 });
+        static Pointer FlyToggle = new Pointer("Minecraft.Windows.exe", 0x036A0288, new int[] { 0x0, 0x8, 0x20, 0xB8, 0x8B8 });
 
         public static void Tick10()
         {
