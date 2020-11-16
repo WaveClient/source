@@ -14,9 +14,9 @@ Wave Client is a Minecraft Windows 10 Edition (Bedrock) Utility Mod!
 
     [Download the Visual Studio C++ Redistributable](https://aka.ms/vs/16/release/VC_redist.x64.exe)
 
-2. Open and Inject 
+2. Open, Update, Launch! 
 
-    Open the injector, when opened, press the inject button WHILE MC IS OPEN!
+    Open the launcher, when opened, press the update button, wait, then press the launch button WHILE MC IS OPEN!
     All Done :)
 
 </details>
@@ -25,17 +25,11 @@ Wave Client is a Minecraft Windows 10 Edition (Bedrock) Utility Mod!
 Contributions are always welcome, but since we are closed souce, you must apply for developer!
 
 ## To do
-Add icon for the console & app.
-Better GUI, maybe tabbed. 
-Code optimization
-More pointers | Localplayer
-Have an internal version with commands that would work along side this (it would auto inject the DLL upon launch, this IS coming soon!
+Check TODO.txt
 
 ## Code used from external sources (not our work)
 
-<!--- - [L](https://google.com) - --> We have restarted our development, once again, this should be entirely made by us (except libraries etc..) . Will be updated if needed!
-
-
+<!--- - [L](https://google.com) - We have restarted our development, once again, this should be entirely made by us (except libraries etc..) . Will be updated if needed!-->
 
 ## Support
 Join our [Discord Server](https://discord.gg/3mdwjR)
