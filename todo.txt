@@ -3,3 +3,6 @@ Work on tower, autoclicker, scaffold, clickTP
 Find more developers!
 Work on autoclicker
 Make the GUI good!
+Fix module bugs
+TABGUI!
+Arraylist (coming soon!)
