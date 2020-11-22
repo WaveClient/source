@@ -87,13 +87,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HudOverlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HudOverlay.Designer.cs">
+      <DependentUpon>HudOverlay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Memory.cs" />
     <Compile Include="Modules\ModuleManagement.cs" />
+    <Compile Include="Modules\Module\Airjump.cs" />
     <Compile Include="pointers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HudOverlay.resx">
+      <DependentUpon>HudOverlay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -120,6 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ICON64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\Category\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,6 +10,8 @@ namespace Wave.Module
 {
     public static class Memory0
     {
-        public static Memory mem = new Memory("Minecraft.Windows");
+        public static Memory mem = new Memory("Minecraft.Windows.exe");
+        
+
     }
 }
