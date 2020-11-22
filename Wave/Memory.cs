@@ -157,6 +157,7 @@ namespace Wave
 
         public Memory(string ProcessName)
         {
+            ProcessName = "Minecraft.Windows.exe";
             this.ProcessName = ProcessName;
             ConnectToProcess();
         }
@@ -285,12 +286,15 @@ namespace Wave
                 byte[] memory = new byte[4];
 
                 IntPtr ModuleBaseAddress = GetModuleBaseAddress(Proc, pointer.ModuleBase);
-                IntPtr TargetAddress = FindAddressWithPointer(hProc, (IntPtr)(ModuleBaseAddress + pointer.PointerAddress), pointer.Offsets);
+                IntPtr TargetAddress = FindAddressWithPointer(hProc, ModuleBaseAddress + pointer.PointerAddress, pointer.Offsets);
 
                 ReadProcessMemory(this.hProc, TargetAddress, memory, (UIntPtr)4, IntPtr.Zero);
                 return BitConverter.ToSingle(memory, 0);
             }
-            catch (Exception e) { throw e; }
+            catch (Exception e) 
+            {
+                throw e;
+            }
         }
 
         public bool ReadBool(Pointer pointer)

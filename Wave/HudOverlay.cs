@@ -14,6 +14,12 @@ namespace WaveClient
 {
     public partial class HudOverlay : Form
     {
+        Graphics g;
+        Pen BluePen = new Pen(Color.Blue);
+        SolidBrush BackGround = new SolidBrush(Color.White);
+        SolidBrush ForeGround = new SolidBrush(Color.Blue);
+        System.Drawing.Font font = new System.Drawing.Font("Arial", 15);
+        
         public const string WINDOW_NAME = "Minecraft";
 
         [DllImport("user32.dll")]
@@ -55,7 +61,8 @@ namespace WaveClient
 
                 this.Left = rect.left;
                 this.Top = rect.top;
-                Thread.Sleep(50);
+                Thread.Sleep(15);
+                
             }
         }
 
@@ -69,8 +76,19 @@ namespace WaveClient
 
             int initialStyle = GetWindowLong(this.Handle, -20);
             SetWindowLong(this.Handle, -20, initialStyle | 0x8000 | 0x20);
+        }
 
+        private void HudOverlay_Paint(object sender, PaintEventArgs e)
+        {
             
+            g = e.Graphics;
+            g.DrawRectangle(BluePen, 15,30,220,100);
+            g.FillRectangle(BackGround, 15, 30, 220, 100);
+            g.DrawString("WaveClient Utility mod", font, ForeGround, 15, 30);
+            
+            g.DrawString("Dev Build", font, ForeGround, 15, 55);
+            g.DrawRectangle(BluePen, 1000, 1000, 220, 100);
+            g.FillRectangle(BackGround, 1300, 500, 200, 100);
         }
     }
 }
