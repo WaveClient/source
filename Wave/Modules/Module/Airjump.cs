@@ -10,6 +10,9 @@ namespace WaveClient.Module
     {
         public static bool ToggleState;
 
-
+        public static void onTick10()
+        {
+            
+        }
     }
 }

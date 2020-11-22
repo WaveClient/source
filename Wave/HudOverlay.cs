@@ -76,6 +76,7 @@ namespace WaveClient
 
             int initialStyle = GetWindowLong(this.Handle, -20);
             SetWindowLong(this.Handle, -20, initialStyle | 0x8000 | 0x20);
+            
         }
 
         private void HudOverlay_Paint(object sender, PaintEventArgs e)
@@ -87,7 +88,7 @@ namespace WaveClient
             g.DrawString("WaveClient Utility mod", font, ForeGround, 15, 30);
             
             g.DrawString("Dev Build", font, ForeGround, 15, 55);
-            g.DrawRectangle(BluePen, 1000, 1000, 220, 100);
+            g.DrawRectangle(BluePen, 1300, 500, 200, 100);
             g.FillRectangle(BackGround, 1300, 500, 200, 100);
         }
     }

@@ -113,7 +113,7 @@ namespace WaveClient
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            Pointer OnGround = new Pointer("Minecraft.Windows.exe", 0x0, new int[] { 0x0 });
+            Pointer OnGround = pointers.OnGround;
             if (checkBox1.Checked)
             {
                 Memory0.mem.WriteMemory(OnGround, 16777473);
@@ -140,9 +140,9 @@ namespace WaveClient
         void realcoordupdate(object sender, EventArgs e)
         {
             //pointers
-            Pointer YPOS = new Pointer("Minecraft.Windows.exe", 0x035866E0, new int[] { 0x130, 0x0, 0x8, 0x1F0, 0x0, 0x138, 0x484 });
-            Pointer XPOS = new Pointer("Minecraft.Windows.exe", 0x035866E0, new int[] { 0x130, 0x0, 0x8, 0x1F0, 0x0, 0x138, 0x480 });
-            Pointer ZPOS = new Pointer("Minecraft.Windows.exe", 0x035866E0, new int[] { 0x130, 0x0, 0x8, 0x1F0, 0x0, 0x138, 0x488 });
+            Pointer YPOS = pointers.posY1;
+            Pointer XPOS = pointers.posX1;
+            Pointer ZPOS = pointers.posZ1;
             float ycoordf = Memory0.mem.ReadFloat(YPOS);
             string ycoord = ycoordf.ToString();
             float xcoordf = Memory0.mem.ReadFloat(XPOS);
