@@ -1,8 +1,7 @@
-Add icon on the launcher!
-Work on tower, autoclicker, scaffold, clickTP
-Find more developers!
 Work on autoclicker
 Make the GUI good!
 Fix module bugs
 TABGUI!
+Ghost Mode (tries to make it undetectable)
 Arraylist (coming soon!)
+Find more developers!

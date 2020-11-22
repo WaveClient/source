@@ -1,7 +1,2 @@
-Added Hotkeys
-Fixed Fly
-Fixed JetPack
-Discord RPC 100% works now!!!
-Added Sliders
-Added namespoof
-Added settings tab
+RPC Update!
+Updated to 1.14.100
