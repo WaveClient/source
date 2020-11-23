@@ -1,5 +1,5 @@
 ﻿using System;
-using Chrones.Cmr.Font;
+using Wave.cmr;
 
 namespace Wave.cmr
 {

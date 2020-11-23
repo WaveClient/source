@@ -20,7 +20,7 @@ namespace WaveClient
         SolidBrush BackGround = new SolidBrush(Color.White);
         SolidBrush ForeGround = new SolidBrush(Color.Blue);
         System.Drawing.Font font = new System.Drawing.Font("Arial", 15);
-        
+        public static bool Clickgui;
         public const string WINDOW_NAME = "Minecraft";
 
         [DllImport("user32.dll")]
@@ -63,6 +63,10 @@ namespace WaveClient
                 this.Left = rect.left;
                 this.Top = rect.top;
                 Thread.Sleep(15);
+                if (cmr_input.GetKeyStateDown(Wave.cmr.win32.Win32.VirtualKeys.Insert))
+                {
+                    Clickgui = !Clickgui;
+                }
                 
             }
         }
@@ -83,14 +87,17 @@ namespace WaveClient
         private void HudOverlay_Paint(object sender, PaintEventArgs e)
         {
             
+            
             g = e.Graphics;
-            g.DrawRectangle(BluePen, 15,30,220,100);
+            g.DrawRectangle(BluePen, 15, 30, 220, 100);
             g.FillRectangle(BackGround, 15, 30, 220, 100);
             g.DrawString("WaveClient Utility mod", font, ForeGround, 15, 30);
-            
+
             g.DrawString("Dev Build", font, ForeGround, 15, 55);
-            g.DrawRectangle(BluePen, 1300, 500, 200, 100);
-            g.FillRectangle(BackGround, 1300, 500, 200, 100);
+            g.DrawRectangle(BluePen, 1300, 900, 200, 100);
+
+            g.FillRectangle(BackGround, 1300, 500, 500, 100);
+            
         }
         public static void OpenClickgui()
         {
