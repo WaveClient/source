@@ -2,6 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Windows.Input;
 using Wave;
+using Wave.cmr;
 
 namespace WaveClient.Module
 {

@@ -13,6 +13,7 @@ using Wave;
 using Wave.Module;
 using System.Net;
 using DiscordRPC;
+using Wave.cmr;
 
 namespace WaveClient
 {
@@ -109,20 +110,6 @@ namespace WaveClient
                 MessageBox.Show("Please input some text, smh!");
             }
         }
-
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            Pointer OnGround = pointers.OnGround;
-            if (checkBox1.Checked)
-            {
-                Memory0.mem.WriteMemory(OnGround, 16777473);
-            } else
-            {
-                
-            }
-        }
-
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -139,17 +126,6 @@ namespace WaveClient
 
         void realcoordupdate(object sender, EventArgs e)
         {
-            //pointers
-            Pointer YPOS = pointers.posY1;
-            Pointer XPOS = pointers.posX1;
-            Pointer ZPOS = pointers.posZ1;
-            float ycoordf = Memory0.mem.ReadFloat(YPOS);
-            string ycoord = ycoordf.ToString();
-            float xcoordf = Memory0.mem.ReadFloat(XPOS);
-            string xcoord = xcoordf.ToString();
-            float zcoordf = Memory0.mem.ReadFloat(ZPOS);
-            string zcoord = zcoordf.ToString();
-            coordlabel.Text = "Coords: \nX:" + xcoord + "\nY: " + ycoord + "\nZ: " + zcoord;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -165,6 +141,11 @@ namespace WaveClient
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("A minecraft client made by JavaScript#8785 and gamerb.class#8316");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Module.Airjump.ToggleState = !Module.Airjump.ToggleState;
         }
     }
 }

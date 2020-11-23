@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Wave;
+using Wave.cmr;
 using WaveClient;
 
 namespace Wave.Module

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Wave.cmr;
 
 namespace WaveClient
 {
@@ -90,6 +91,10 @@ namespace WaveClient
             g.DrawString("Dev Build", font, ForeGround, 15, 55);
             g.DrawRectangle(BluePen, 1300, 500, 200, 100);
             g.FillRectangle(BackGround, 1300, 500, 200, 100);
+        }
+        public static void OpenClickgui()
+        {
+            
         }
     }
 }
