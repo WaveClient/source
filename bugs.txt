@@ -1,2 +1,4 @@
+DO NOT USE AIRJUMP
+FOV is extremely buggy
 TP Crash
 No other bugs reported.
